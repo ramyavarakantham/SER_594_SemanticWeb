@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCmusic:hasType rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:music="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://example.org/data/object_1.csv#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=1">
+    <music:hasmusic:name>Madhavilathab</music:hasmusic:name>
+    <music:hasExternalURL>https://open.spotify.com/user/9clojj7uw5ss7h1x7uwl8k4fl</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>0</music:hasFollowersTotal>
+    <music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl</music:hasHref>
+    <music:hasId>9clojj7uw5ss7h1x7uwl8k4fl</music:hasId>
+    <music:hasType>user</music:hasType>
+    <music:hasUri>spotify:user:9clojj7uw5ss7h1x7uwl8k4fl</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=10">
+    <music:hasheight>60</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/60/e6a84983ed9b0a04ce633b021329f7df034e7c7c5acb2a5b069c2f14f6e7efd5daa9bd340131ca47506b3aee8a743d125460453499a56cb64e5a43ecb3d71d7a20d41146f24a7569c0869dfb3b16e860</music:hasurl>
+    <music:hasId>60</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=100">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/f9c035d14928a9e9e92d749f78293de8015c88b3</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=101">
+    <music:hasExternalURL>https://open.spotify.com/artist/2DI333c6vWP88mWABDIsH7</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>2733</music:hasFollowersTotal>
+    <music:music:hasgenres001>post-teen pop</music:music:hasgenres001>
+    <music:hasHref>https://api.spotify.com/v1/artists/2DI333c6vWP88mWABDIsH7</music:hasHref>
+    <music:hasId>2DI333c6vWP88mWABDIsH7</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/04da0ae500b9082de8f18c850fabe5d8c07440ce</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>The Administration</music:name>
+    <music:popularity>0</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:2DI333c6vWP88mWABDIsH7</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=102">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4cf13d6dfd6e9fa7b938bd1d5bb5b03cfbe5d9e0</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=103">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/cfb4f0e1d3aa778b77ece5d44bf97cb89902aa4b</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=104">
+    <music:hasExternalURL>https://open.spotify.com/artist/2FwDTncULUnmANIh7qKa5z</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>145297</music:hasFollowersTotal>
+    <music:music:hasgenres001>chillhop</music:music:hasgenres001>
+    <music:music:hasgenres002>deep indie r&amp;b</music:music:hasgenres002>
+    <music:hasgenres003>indie r&amp;b</music:hasgenres003>
+    <music:hasgenres004>tropical house</music:hasgenres004>
+    <music:hasgenres005>vapor soul</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/2FwDTncULUnmANIh7qKa5z</music:hasHref>
+    <music:hasId>2FwDTncULUnmANIh7qKa5z</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/9bbfae30f343ee43a4890da8af1ddbcfeb85725b</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>FKJ</music:name>
+    <music:popularity>70</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:2FwDTncULUnmANIh7qKa5z</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=105">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/becc64d51edeb0b97f0f346c2727aff19d1a4443</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=106">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/27ad4bb4a00caff130006b33337cc6c73755faf8</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=107">
+    <music:hasExternalURL>https://open.spotify.com/artist/2GEcMpeGIad5O23WxDRFMn</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>48515</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep pop r&amp;b</music:music:hasgenres001>
+    <music:music:hasgenres002>r&amp;b</music:music:hasgenres002>
+    <music:hasHref>https://api.spotify.com/v1/artists/2GEcMpeGIad5O23WxDRFMn</music:hasHref>
+    <music:hasId>2GEcMpeGIad5O23WxDRFMn</music:hasId>
+    <music:hasheight>918</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/0734567a5d1ac539ec3de03c098033535a0d4c5e</music:hasurl>
+    <music:hasId>764</music:hasId>
+    <music:name>Rico Love</music:name>
+    <music:popularity>66</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:2GEcMpeGIad5O23WxDRFMn</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=108">
+    <music:hasheight>769</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/2211b8821b10f7a7af5d843323702bd13cb4c7d6</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=109">
+    <music:hasheight>240</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/00b045f10b3052399a054a6e3b65fde82b8322fe</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=11">
+    <music_hascursors_after>4AVFqumd2ogHFlRbKIjp1t</music_hascursors_after>
+    <music_hasmusic:hasHref>https://api.spotify.com/v1/me/following?music:hasType=artist&amp;music:limit=50</music_hasmusic:hasHref>
+    <music:hasExternalURL>https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>8906083</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>pop christmas</music:hasgenres003>
+    <music:hasHref>https://api.spotify.com/v1/artists/04gDigrS5kc9YWfZHwBETP</music:hasHref>
+    <music:hasId>04gDigrS5kc9YWfZHwBETP</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4079ef5effe54ab8cc099e2b6d872899d033b09d</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Maroon 5</music:name>
+    <music:popularity>94</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:04gDigrS5kc9YWfZHwBETP</music:hasUri>
+    <music_hasmusic:limit>50</music_hasmusic:limit>
+    <music_hasnext>https://api.spotify.com/v1/me/following?music:hasType=artist&amp;after=4AVFqumd2ogHFlRbKIjp1t&amp;music:limit=50</music_hasnext>
+    <music_hastotal>97</music_hastotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=110">
+    <music:hasheight>77</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/fb170c53ac906c558dfb8e62c56b10a07b23070a</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=111">
+    <music:hasExternalURL>https://open.spotify.com/artist/2NUz5P42WqkxilbI8ocN76</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>253989</music:hasFollowersTotal>
+    <music:music:hasgenres001>dancehall</music:music:hasgenres001>
+    <music:hasHref>https://api.spotify.com/v1/artists/2NUz5P42WqkxilbI8ocN76</music:hasHref>
+    <music:hasId>2NUz5P42WqkxilbI8ocN76</music:hasId>
+    <music:hasheight>504</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/470fc1992a353d801faf9686c020ba6f32c4eacc</music:hasurl>
+    <music:hasId>750</music:hasId>
+    <music:name>Vybz Kartel</music:name>
+    <music:popularity>71</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:2NUz5P42WqkxilbI8ocN76</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=112">
+    <music:hasheight>430</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4aed00ac868cce27328d4390d761a7651e317431</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=113">
+    <music:hasheight>134</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/229056d196a2985e516d1fa16e933a7b0fc27cdf</music:hasurl>
+    <music:hasId>199</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=114">
+    <music:hasheight>43</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/353417cc4f8b9d7e1ad4d52d584f130505d26122</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=115">
+    <music:hasExternalURL>https://open.spotify.com/artist/2NoJ7NuNs9nyj8Thoh1kbu</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>8001</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep indian pop</music:music:hasgenres001>
+    <music:music:hasgenres002>desi</music:music:hasgenres002>
+    <music:hasgenres003>desi hip hop</music:hasgenres003>
+    <music:hasgenres004>filmi</music:hasgenres004>
+    <music:hasgenres005>indian folk</music:hasgenres005>
+    <music:hasgenres006>indian pop</music:hasgenres006>
+    <music:hasHref>https://api.spotify.com/v1/artists/2NoJ7NuNs9nyj8Thoh1kbu</music:hasHref>
+    <music:hasId>2NoJ7NuNs9nyj8Thoh1kbu</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/bcee3c8f91fb8d77f227b7a458b5990537f9903c</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Hariharan</music:name>
+    <music:popularity>51</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:2NoJ7NuNs9nyj8Thoh1kbu</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=116">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/cefab727aad488472b3abf72c141dbe173c929bb</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=117">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/3cd979d94f8a443bcd73535c9973dbabed2ac061</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=118">
+    <music:hasExternalURL>https://open.spotify.com/artist/32lVGr0fSRGT6okLKHiP68</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>63413</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>dance rock</music:music:hasgenres002>
+    <music:hasgenres003>disco</music:hasgenres003>
+    <music:hasgenres004>freestyle</music:hasgenres004>
+    <music:hasgenres005>mellow gold</music:hasgenres005>
+    <music:hasgenres006>new romantic</music:hasgenres006>
+    <music:hasgenres007>new wave pop</music:hasgenres007>
+    <music:hasgenres008>soft rock</music:hasgenres008>
+    <music:hasgenres009>urban contemporary</music:hasgenres009>
+    <music:hasgenres010>vocal house</music:hasgenres010>
+    <music:hasHref>https://api.spotify.com/v1/artists/32lVGr0fSRGT6okLKHiP68</music:hasHref>
+    <music:hasId>32lVGr0fSRGT6okLKHiP68</music:hasId>
+    <music:hasheight>1091</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/c6a26a85816c1d0c025d7a12f2337e4cd6367eeb</music:hasurl>
+    <music:hasId>960</music:hasId>
+    <music:name>Taylor Dayne</music:name>
+    <music:popularity>62</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:32lVGr0fSRGT6okLKHiP68</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=119">
+    <music:hasheight>727</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/34618a6605f0bb291a30021ac4b859c4d00a5db4</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=12">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a6b50b62941f169aea7a48039a509f643c8c69e3</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=120">
+    <music:hasheight>227</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/21d3b74f3c8749080a6d3ce7b2344d8df482b063</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=121">
+    <music:hasheight>73</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d14f646c4646251ec929df5fb6e7f09de0339660</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=122">
+    <music:hasExternalURL>https://open.spotify.com/artist/34KgepLllQVW6H6jP2VyGs</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>5986</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep underground hip hop</music:music:hasgenres001>
+    <music:music:hasgenres002>underground pop rap</music:music:hasgenres002>
+    <music:hasHref>https://api.spotify.com/v1/artists/34KgepLllQVW6H6jP2VyGs</music:hasHref>
+    <music:hasId>34KgepLllQVW6H6jP2VyGs</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/eb55c45cc51faa215c6ad9d7eaf975907f93a605</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Tayyib Ali</music:name>
+    <music:popularity>44</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:34KgepLllQVW6H6jP2VyGs</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=123">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/8a08d54a46c0c2192cb71d9b25859e437ed8cc81</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=124">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/aec976f2189c3c647df849f39525c8f6c817a654</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=125">
+    <music:hasExternalURL>https://open.spotify.com/artist/3IcF2f5vEkY6HPQfLlQDlw</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>91959</music:hasFollowersTotal>
+    <music:music:hasgenres001>children's christmas</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>pop christmas</music:hasgenres003>
+    <music:hasgenres004>post-teen pop</music:hasgenres004>
+    <music:hasgenres005>teen pop</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/3IcF2f5vEkY6HPQfLlQDlw</music:hasHref>
+    <music:hasId>3IcF2f5vEkY6HPQfLlQDlw</music:hasId>
+    <music:hasheight>788</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/564c05b718825f646453e7c3f62a9a055fa864ed</music:hasurl>
+    <music:hasId>525</music:hasId>
+    <music:name>Mitchel Musso</music:name>
+    <music:popularity>42</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3IcF2f5vEkY6HPQfLlQDlw</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=126">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/206738d1c5faa366ee7803aef9c4393f425e6312</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=127">
+    <music:hasheight>96</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/728ac057bfbc5afab96d8eed81a254310324e273</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=128">
+    <music:hasExternalURL>https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>2240679</music:hasFollowersTotal>
+    <music:hasHref>https://api.spotify.com/v1/artists/3Nrfpe0tUJi4K4DXYWgMUX</music:hasHref>
+    <music:hasId>3Nrfpe0tUJi4K4DXYWgMUX</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/0c9057cb30520f9f883a220051260fc66a2f3ffa</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>BTS</music:name>
+    <music:popularity>91</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=129">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/34ee854082d0ea4d571e2ecf7f4aecea61270ad0</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=13">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/34760086fe6f4e6f8121fe00aa4901ace216b268</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=130">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/156147697b696d4a6180e037dc1e2a33117d8d4a</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=131">
+    <music:hasExternalURL>https://open.spotify.com/artist/3SYGWAHCe31oykdeUPpoJp</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>309431</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>pop christmas</music:hasgenres003>
+    <music:hasgenres004>post-teen pop</music:hasgenres004>
+    <music:hasgenres005>teen pop</music:hasgenres005>
+    <music:hasgenres006>viral pop</music:hasgenres006>
+    <music:hasHref>https://api.spotify.com/v1/artists/3SYGWAHCe31oykdeUPpoJp</music:hasHref>
+    <music:hasId>3SYGWAHCe31oykdeUPpoJp</music:hasId>
+    <music:hasheight>1020</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/5a3b3a327c19d314af669571fe25bb1001cc3d88</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Miranda Cosgrove</music:name>
+    <music:popularity>53</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3SYGWAHCe31oykdeUPpoJp</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=132">
+    <music:hasheight>653</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a1400e5cf3e532b346d99b78d109db795851580d</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=133">
+    <music:hasheight>204</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d9c135b98425ffc01ac79f306dd2241769b19d5b</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=134">
+    <music:hasheight>65</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/f685444f1c71a707ec8a6799aa59eea51041ec4a</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=135">
+    <music:hasExternalURL>https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>13594661</music:hasFollowersTotal>
+    <music:music:hasgenres001>canadian pop</music:music:hasgenres001>
+    <music:music:hasgenres002>hip hop</music:music:hasgenres002>
+    <music:hasgenres003>pop rap</music:hasgenres003>
+    <music:hasgenres004>rap</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4</music:hasHref>
+    <music:hasId>3TVXtAsR1Inumwj472S9r4</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/cb080366dc8af1fe4dc90c4b9959794794884c66</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Drake</music:name>
+    <music:popularity>99</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3TVXtAsR1Inumwj472S9r4</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=136">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/6bd672a0f33705eda4b543c304c21a152f393291</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=137">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/085ae2e76f402468fe9982851b51cf876e4f20fe</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=138">
+    <music:hasExternalURL>https://open.spotify.com/artist/3VaV2rGbTKuqCiluNkToEd</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>78</music:hasFollowersTotal>
+    <music:hasHref>https://api.spotify.com/v1/artists/3VaV2rGbTKuqCiluNkToEd</music:hasHref>
+    <music:hasId>3VaV2rGbTKuqCiluNkToEd</music:hasId>
+    <music:name>Bruno Campos</music:name>
+    <music:popularity>52</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3VaV2rGbTKuqCiluNkToEd</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=139">
+    <music:hasExternalURL>https://open.spotify.com/artist/3eqjTLE0HfPfh78zjh6TqT</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>1268491</music:hasFollowersTotal>
+    <music:music:hasgenres001>album rock</music:music:hasgenres001>
+    <music:music:hasgenres002>classic rock</music:music:hasgenres002>
+    <music:hasgenres003>mellow gold</music:hasgenres003>
+    <music:hasgenres004>neo mellow</music:hasgenres004>
+    <music:hasgenres005>permanent wave</music:hasgenres005>
+    <music:hasgenres006>pop christmas</music:hasgenres006>
+    <music:hasgenres007>rock</music:hasgenres007>
+    <music:hasgenres008>roots rock</music:hasgenres008>
+    <music:hasgenres009>singer-songwriter</music:hasgenres009>
+    <music:hasgenres010>soft rock</music:hasgenres010>
+    <music:hasHref>https://api.spotify.com/v1/artists/3eqjTLE0HfPfh78zjh6TqT</music:hasHref>
+    <music:hasId>3eqjTLE0HfPfh78zjh6TqT</music:hasId>
+    <music:hasheight>1498</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/9c40ab817e5fbf77f20ba8951d2338aa0d53681b</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Bruce Springsteen</music:name>
+    <music:popularity>79</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3eqjTLE0HfPfh78zjh6TqT</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=14">
+    <music:hasExternalURL>https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>7556581</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>pop christmas</music:hasgenres003>
+    <music:hasgenres004>post-teen pop</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02</music:hasHref>
+    <music:hasId>06HL4z0CvFAxyc27GXpf02</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/bdaeccb035a8af87b7a70b62217ff5c633ba6c7c</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Taylor Swift</music:name>
+    <music:popularity>96</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:06HL4z0CvFAxyc27GXpf02</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=140">
+    <music:hasheight>959</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/7f5e7263ad7409564589ddc235976d78198bbe1e</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=141">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a5e37faf8abf31823216d6a20ce91c04ce72a9de</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=142">
+    <music:hasheight>96</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/b1109d7c86bcc3bb43c5a4c2c9a2d0d937adefcb</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=143">
+    <music:hasExternalURL>https://open.spotify.com/artist/3h7RaVXBvdSNa7LXQtVYqH</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>389935</music:hasFollowersTotal>
+    <music:music:hasgenres001>pagode</music:music:hasgenres001>
+    <music:hasHref>https://api.spotify.com/v1/artists/3h7RaVXBvdSNa7LXQtVYqH</music:hasHref>
+    <music:hasId>3h7RaVXBvdSNa7LXQtVYqH</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4b073f363c54d5e9dff3f3e12c079184773e8d14</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Armandinho</music:name>
+    <music:popularity>68</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3h7RaVXBvdSNa7LXQtVYqH</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=144">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/873f0c4cb76662b49f6fe77ae2ec8aae55386ed1</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=145">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/931f459140ea9fa0003f28c85eb4f7ea2a0a6470</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=146">
+    <music:hasExternalURL>https://open.spotify.com/artist/3hv9jJF3adDNsBSIQDqcjp</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>377896</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>electronic</music:music:hasgenres002>
+    <music:hasgenres003>pop</music:hasgenres003>
+    <music:hasHref>https://api.spotify.com/v1/artists/3hv9jJF3adDNsBSIQDqcjp</music:hasHref>
+    <music:hasId>3hv9jJF3adDNsBSIQDqcjp</music:hasId>
+    <music:hasheight>1000</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/3471856cca60db3c9bdf84bce102b5356d696b61</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Mark Ronson</music:name>
+    <music:popularity>77</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3hv9jJF3adDNsBSIQDqcjp</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=147">
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/e035785eb4e48a531d8acce06c485efd55c0a063</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=148">
+    <music:hasheight>200</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d9680a04b79654c0aceb54af40acd753f1538b7f</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=149">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/ee7f6a3d6e628a0ce69109b3823cc26a4cea161c</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=15">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/cec43c2fb746ea2a0c7546aa3408fe2f94887fe4</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=150">
+    <music:hasExternalURL>https://open.spotify.com/artist/3koiLjNrgRTNbOwVmusic:hasIdipeA</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>1406578</music:hasFollowersTotal>
+    <music:music:hasgenres001>classic funk rock</music:music:hasgenres001>
+    <music:music:hasgenres002>motown</music:music:hasgenres002>
+    <music:hasgenres003>quiet storm</music:hasgenres003>
+    <music:hasgenres004>soul</music:hasgenres004>
+    <music:hasgenres005>soul christmas</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/3koiLjNrgRTNbOwVmusic:hasIdipeA</music:hasHref>
+    <music:hasId>3koiLjNrgRTNbOwVmusic:hasIdipeA</music:hasId>
+    <music:hasheight>1000</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d73f92a6343597e5c2f60ca5e416b3d39313e5cc</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Marvin Gaye</music:name>
+    <music:popularity>78</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:3koiLjNrgRTNbOwVmusic:hasIdipeA</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=151">
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/16a8b15bcefe2a46f6ac6f6d3e5518b366b69b8d</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=152">
+    <music:hasheight>200</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/cc8afe51523fa4408c0392843495e3b73f243b30</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=153">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/970c526637e1e11f1a95526ee1340aa2a5865320</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=154">
+    <music:hasExternalURL>https://open.spotify.com/artist/400JXdqRhBKf0A6qNoLCSJ</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>5142</music:hasFollowersTotal>
+    <music:music:hasgenres001>compositional ambient</music:music:hasgenres001>
+    <music:music:hasgenres002>focus</music:music:hasgenres002>
+    <music:hasgenres003>fourth world</music:hasgenres003>
+    <music:hasgenres004>minimal</music:hasgenres004>
+    <music:hasgenres005>modern classical</music:hasgenres005>
+    <music:hasgenres006>modern performance</music:hasgenres006>
+    <music:hasHref>https://api.spotify.com/v1/artists/400JXdqRhBKf0A6qNoLCSJ</music:hasHref>
+    <music:hasId>400JXdqRhBKf0A6qNoLCSJ</music:hasId>
+    <music:hasheight>714</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/784a9a38a37ca63b94f3207c73769c2be1b25496</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Bruce Brubaker</music:name>
+    <music:popularity>59</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:400JXdqRhBKf0A6qNoLCSJ</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=155">
+    <music:hasheight>457</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/3c60cd7edce597278f8db1c7bf13c7229f69c44a</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=156">
+    <music:hasheight>143</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/8cefb71dcfe7cd8a5280161b89206b5cce9dc693</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=157">
+    <music:hasheight>46</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/99f667b7290c5cfce9e2a2037c1f883e632de812</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=158">
+    <music:hasExternalURL>https://open.spotify.com/artist/43HPW60tz4BMYMRnmXMagJ</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>3331</music:hasFollowersTotal>
+    <music:music:hasgenres001>movie tunes</music:music:hasgenres001>
+    <music:hasHref>https://api.spotify.com/v1/artists/43HPW60tz4BMYMRnmXMagJ</music:hasHref>
+    <music:hasId>43HPW60tz4BMYMRnmXMagJ</music:hasId>
+    <music:name>Bruce Reitherman</music:name>
+    <music:popularity>53</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:43HPW60tz4BMYMRnmXMagJ</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=159">
+    <music:hasExternalURL>https://open.spotify.com/artist/44PA0rCQXikgOWbfY7Fq7m</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>223645</music:hasFollowersTotal>
+    <music:music:hasgenres001>crunk</music:music:hasgenres001>
+    <music:music:hasgenres002>dance pop</music:music:hasgenres002>
+    <music:hasgenres003>dirty south rap</music:hasgenres003>
+    <music:hasgenres004>gangster rap</music:hasgenres004>
+    <music:hasgenres005>hip hop</music:hasgenres005>
+    <music:hasgenres006>hip pop</music:hasgenres006>
+    <music:hasgenres007>pop christmas</music:hasgenres007>
+    <music:hasgenres008>pop rap</music:hasgenres008>
+    <music:hasgenres009>rap</music:hasgenres009>
+    <music:hasgenres010>southern hip hop</music:hasgenres010>
+    <music:hasgenres011>trap music</music:hasgenres011>
+    <music:hasHref>https://api.spotify.com/v1/artists/44PA0rCQXikgOWbfY7Fq7m</music:hasHref>
+    <music:hasId>44PA0rCQXikgOWbfY7Fq7m</music:hasId>
+    <music:hasheight>480</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/8a522c7faa13cf4321ca6bea075fd97f75f40cfe</music:hasurl>
+    <music:hasId>480</music:hasId>
+    <music:name>Ying Yang Twins</music:name>
+    <music:popularity>68</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:44PA0rCQXikgOWbfY7Fq7m</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=16">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/33bc9128ad82f7d39847b6db6a49d5416502e7e7</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=160">
+    <music:hasheight>200</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/b434cb66ee3b358bd1707bce3e7371f158184f8c</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=161">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/f57a69bfb8aef58b2b2cee85cb82eddab8daeca1</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=162">
+    <music:hasExternalURL>https://open.spotify.com/artist/480xKab3lUPhBBnCzlzqIu</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>96123</music:hasFollowersTotal>
+    <music:music:hasgenres001>bow pop</music:music:hasgenres001>
+    <music:music:hasgenres002>classify</music:music:hasgenres002>
+    <music:hasgenres003>otacore</music:hasgenres003>
+    <music:hasgenres004>scorecore</music:hasgenres004>
+    <music:hasgenres005>vmusic:hasIdeo game music</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/480xKab3lUPhBBnCzlzqIu</music:hasHref>
+    <music:hasId>480xKab3lUPhBBnCzlzqIu</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/33d8769d1b92f690ba3906c0c9143bbaf1c5c763</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Taylor Davis</music:name>
+    <music:popularity>61</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:480xKab3lUPhBBnCzlzqIu</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=163">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/71abc9af652e2922e8cf57ba511fbead06acaa87</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=164">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/7def102f505c2a5d7ebf3def01a4bb0401db3768</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=165">
+    <music:hasExternalURL>https://open.spotify.com/artist/4AVFqumd2ogHFlRbKIjp1t</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>1195833</music:hasFollowersTotal>
+    <music:music:hasgenres001>big room</music:music:hasgenres001>
+    <music:music:hasgenres002>dance pop</music:music:hasgenres002>
+    <music:hasgenres003>deep big room</music:hasgenres003>
+    <music:hasgenres004>edm</music:hasgenres004>
+    <music:hasgenres005>electro house</music:hasgenres005>
+    <music:hasgenres006>pop</music:hasgenres006>
+    <music:hasgenres007>progressive electro house</music:hasgenres007>
+    <music:hasgenres008>tropical house</music:hasgenres008>
+    <music:hasHref>https://api.spotify.com/v1/artists/4AVFqumd2ogHFlRbKIjp1t</music:hasHref>
+    <music:hasId>4AVFqumd2ogHFlRbKIjp1t</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/0ae4d02b67d953c898f7c95b69c2ec06e6797468</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Alesso</music:name>
+    <music:popularity>86</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:4AVFqumd2ogHFlRbKIjp1t</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=166">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/51c50fe8d5dd653460dcbaa8d6c72e2ef6a0afba</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=167">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/93f3ca7e9e942f3ff8174e5de7b232ef229aaff0</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=17">
+    <music:hasExternalURL>https://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>5946203</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>latin</music:music:hasgenres002>
+    <music:hasgenres003>latin pop</music:hasgenres003>
+    <music:hasgenres004>pop</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/0EmeFodog0BfCgMzAIvKQp</music:hasHref>
+    <music:hasId>0EmeFodog0BfCgMzAIvKQp</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/9f65f9f5ba10e0243da093306d213f88ccb85da6</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Shakira</music:name>
+    <music:popularity>90</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:0EmeFodog0BfCgMzAIvKQp</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=18">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/78e87fcc881b4572913167d8488f975c104451b7</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=19">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4c8ff1e7bf10e7f5b1430a270de5faf5e9a21e2c</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=2">
+    <music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl/playlists?offset=0&amp;music:limit=50</music:hasHref>
+    <music:collaborative>False</music:collaborative>
+    <music::hasExternalURL>http://open.spotify.com/user/9clojj7uw5ss7h1x7uwl8k4fl/playlist/4iHXQ4qMqAiuxv1Hd11Ygj</music::hasExternalURL>
+    <music::hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl/playlists/4iHXQ4qMqAiuxv1Hd11Ygj</music::hasHref>
+    <music::hasId>4iHXQ4qMqAiuxv1Hd11Ygj</music::hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/640/cbaae5a0a78584e707943c56035123195639a48b410191f75b2d2d48adb5a5d80d2acd09f811ff47403d7d3b6ef12efdfc3d90a375316581a92400ea679472c6c90c259f3ed625bfa495b5a202d60e66</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music::name>does this work?</music::name>
+    <music:hasmusic:name>Madhavilathab</music:hasmusic:name>
+    <music:hasExternalURL>http://open.spotify.com/user/9clojj7uw5ss7h1x7uwl8k4fl</music:hasExternalURL>
+    <music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl</music:hasHref>
+    <music:hasId>9clojj7uw5ss7h1x7uwl8k4fl</music:hasId>
+    <music:hasType>user</music:hasType>
+    <music:hasUri>spotify:user:9clojj7uw5ss7h1x7uwl8k4fl</music:hasUri>
+    <music:public>True</music:public>
+    <music:snapshot_music:hasId>3K+jZvJ5F904Zn2ZUQVSDNNuY4IYozle1EVN2VwoLkOAA4hACX7HqgbrpSF4VZU4</music:snapshot_music:hasId>
+    <music:tracks_music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl/playlists/4iHXQ4qMqAiuxv1Hd11Ygj/tracks</music:tracks_music:hasHref>
+    <music:tracks_total>10</music:tracks_total>
+    <music::hasType>playlist</music::hasType>
+    <music::hasUri>spotify:user:9clojj7uw5ss7h1x7uwl8k4fl:playlist:4iHXQ4qMqAiuxv1Hd11Ygj</music::hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=20">
+    <music:hasExternalURL>https://open.spotify.com/artist/0LSPREIgGMZXCuKVel7LVD</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>7084</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep indian pop</music:music:hasgenres001>
+    <music:music:hasgenres002>desi</music:music:hasgenres002>
+    <music:hasgenres003>desi hip hop</music:hasgenres003>
+    <music:hasgenres004>filmi</music:hasgenres004>
+    <music:hasgenres005>indian pop</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/0LSPREIgGMZXCuKVel7LVD</music:hasHref>
+    <music:hasId>0LSPREIgGMZXCuKVel7LVD</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/6f066a2c0da252fd96fd67e5c05298e7af153a54</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Karthik</music:name>
+    <music:popularity>50</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:0LSPREIgGMZXCuKVel7LVD</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=21">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/3d7fb8176137830952cbeb171a5c2f13506f89db</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=22">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/40c1b51d69f2ff4046d70b5fad4d61061b85fb66</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=23">
+    <music:hasExternalURL>https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>8494652</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>pop rap</music:hasgenres003>
+    <music:hasgenres004>post-teen pop</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/0du5cEVh5yTK9QJze8zA0C</music:hasHref>
+    <music:hasId>0du5cEVh5yTK9QJze8zA0C</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/aa32d6d4ca2467974403518dd3ebfe8831c5ced1</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Bruno Mars</music:name>
+    <music:popularity>92</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:0du5cEVh5yTK9QJze8zA0C</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=24">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/63cad86cb183568085a4e5f0be86aa187cc511e4</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=25">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/5461dcbb3f23e1df62d85c8273fc49cc4edd49d5</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=26">
+    <music:hasExternalURL>https://open.spotify.com/artist/0h1zs4CTlU9D2QtgPxptUD</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>1184889</music:hasFollowersTotal>
+    <music:music:hasgenres001>cantautor</music:music:hasgenres001>
+    <music:music:hasgenres002>latin</music:music:hasgenres002>
+    <music:hasgenres003>latin arena pop</music:hasgenres003>
+    <music:hasgenres004>latin pop</music:hasgenres004>
+    <music:hasgenres005>rock en espanol</music:hasgenres005>
+    <music:hasgenres006>tropical</music:hasgenres006>
+    <music:hasHref>https://api.spotify.com/v1/artists/0h1zs4CTlU9D2QtgPxptUD</music:hasHref>
+    <music:hasId>0h1zs4CTlU9D2QtgPxptUD</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/fa047bfcb6298b8dfb65eb626ba2a765ed8d42eb</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Ricardo Arjona</music:name>
+    <music:popularity>80</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:0h1zs4CTlU9D2QtgPxptUD</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=27">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/3f57a92a47892421d87642e25a4725536bcbb820</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=28">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/57184945139673af4acde46054054f5ae33d24e4</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=29">
+    <music:hasExternalURL>https://open.spotify.com/artist/0oOet2f43PA68X5RxKobEy</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>37664</music:hasFollowersTotal>
+    <music:music:hasgenres001>desi</music:music:hasgenres001>
+    <music:music:hasgenres002>desi hip hop</music:music:hasgenres002>
+    <music:hasgenres003>filmi</music:hasgenres003>
+    <music:hasgenres004>indian pop</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/0oOet2f43PA68X5RxKobEy</music:hasHref>
+    <music:hasId>0oOet2f43PA68X5RxKobEy</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/7f65f962bc2d511be901f1c01c3cc63f8e4cc7e7</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Shreya Ghoshal</music:name>
+    <music:popularity>61</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:0oOet2f43PA68X5RxKobEy</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=3">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/300/cbaae5a0a78584e707943c56035123195639a48b410191f75b2d2d48adb5a5d80d2acd09f811ff47403d7d3b6ef12efdfc3d90a375316581a92400ea679472c6c90c259f3ed625bfa495b5a202d60e66</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=30">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/74e32ecacc8faf6cebd9b96581f11e47a2975b3c</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=31">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/3b635440de65b173ca6425938e264e3a26f69672</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=32">
+    <music:hasExternalURL>https://open.spotify.com/artist/0yLmsf6RBPYqm6hvFJCPg6</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>28354</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep indie r&amp;b</music:music:hasgenres001>
+    <music:music:hasgenres002>indie jazz</music:music:hasgenres002>
+    <music:hasgenres003>indie r&amp;b</music:hasgenres003>
+    <music:hasgenres004>wonky</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/0yLmsf6RBPYqm6hvFJCPg6</music:hasHref>
+    <music:hasId>0yLmsf6RBPYqm6hvFJCPg6</music:hasId>
+    <music:hasheight>333</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/adc9f2497ae97a299c3f400f1a284df0297ef3ad</music:hasurl>
+    <music:hasId>500</music:hasId>
+    <music:name>Taylor Mcferrin</music:name>
+    <music:popularity>52</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:0yLmsf6RBPYqm6hvFJCPg6</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=33">
+    <music:hasheight>133</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/2a6703ec5ce7139be6d73f6fae87858d7ee76452</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=34">
+    <music:hasheight>43</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/7114153bd0ec09d725185fb35acc686157b6052e</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=35">
+    <music:hasExternalURL>https://open.spotify.com/artist/1CoZyIx7UvdxT5c8UkMzHd</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>119959</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep indie r&amp;b</music:music:hasgenres001>
+    <music:music:hasgenres002>escape room</music:music:hasgenres002>
+    <music:hasgenres003>indie r&amp;b</music:hasgenres003>
+    <music:hasgenres004>neo soul</music:hasgenres004>
+    <music:hasgenres005>vapor soul</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/1CoZyIx7UvdxT5c8UkMzHd</music:hasHref>
+    <music:hasId>1CoZyIx7UvdxT5c8UkMzHd</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d5ef8edd4d398e630d302d196268ed101c894ed5</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Jorja Smith</music:name>
+    <music:popularity>75</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1CoZyIx7UvdxT5c8UkMzHd</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=36">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/573e43edfe938e559c21367197a1e597728836bf</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=37">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/0e1b5f1ce8185fe481f76d52eea4f3b851adc9a2</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=38">
+    <music:hasExternalURL>https://open.spotify.com/artist/1EfwyuCzDQpCslZc8C9gkG</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>191567</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep german hip hop</music:music:hasgenres001>
+    <music:music:hasgenres002>deep german pop rock</music:music:hasgenres002>
+    <music:hasgenres003>german hip hop</music:hasgenres003>
+    <music:hasgenres004>german pop</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/1EfwyuCzDQpCslZc8C9gkG</music:hasHref>
+    <music:hasId>1EfwyuCzDQpCslZc8C9gkG</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/f3c3d4113fd66a4a7c3815ccc4c825dcf76f2d56</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>SDP</music:name>
+    <music:popularity>71</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1EfwyuCzDQpCslZc8C9gkG</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=39">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/7435a6f86447bd08e8aac0fff0d57a0a9c1322d0</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=4">
+    <music:hasheight>60</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/60/cbaae5a0a78584e707943c56035123195639a48b410191f75b2d2d48adb5a5d80d2acd09f811ff47403d7d3b6ef12efdfc3d90a375316581a92400ea679472c6c90c259f3ed625bfa495b5a202d60e66</music:hasurl>
+    <music:hasId>60</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=40">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/2f98ca1492936233e7207227683dc1cdfa71c880</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=41">
+    <music:hasExternalURL>https://open.spotify.com/artist/1JfkqBTXs6VC3JZ7RJNu7h</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>41748</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>post-teen pop</music:hasgenres003>
+    <music:hasHref>https://api.spotify.com/v1/artists/1JfkqBTXs6VC3JZ7RJNu7h</music:hasHref>
+    <music:hasId>1JfkqBTXs6VC3JZ7RJNu7h</music:hasId>
+    <music:hasheight>637</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/af3cbbc367a4c757c14a86e04bdc1ffd8cfaf8af</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Jordan Pruitt</music:name>
+    <music:popularity>40</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1JfkqBTXs6VC3JZ7RJNu7h</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=42">
+    <music:hasheight>299</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a0b58b70f61bdb74d7084c0482e0c2b43939b773</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=43">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/926c108ca43685af9acd0b2cf7ec03f98d3ddb5e</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=44">
+    <music:hasExternalURL>https://open.spotify.com/artist/1KCSPY1glIKqW2TotWuXOR</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>3039801</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>post-teen pop</music:hasgenres003>
+    <music:hasHref>https://api.spotify.com/v1/artists/1KCSPY1glIKqW2TotWuXOR</music:hasHref>
+    <music:hasId>1KCSPY1glIKqW2TotWuXOR</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/afc2d276d9c1b398d4f1048c20584f926296b9c0</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>P!nk</music:name>
+    <music:popularity>91</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1KCSPY1glIKqW2TotWuXOR</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=45">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/0bbf030d5fbc44787fa641733e810cd1b928c230</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=46">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/55019ce117b4ddb39caf51e589df6675905fd1b5</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=47">
+    <music:hasExternalURL>https://open.spotify.com/artist/1LzWWI9v4UKdbBgz8fqi15</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>1635</music:hasFollowersTotal>
+    <music:hasHref>https://api.spotify.com/v1/artists/1LzWWI9v4UKdbBgz8fqi15</music:hasHref>
+    <music:hasId>1LzWWI9v4UKdbBgz8fqi15</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/909a2cf29f2f2f2db7e3856a8e21bc09096b05bd</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Tayla Parx</music:name>
+    <music:popularity>54</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1LzWWI9v4UKdbBgz8fqi15</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=48">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a1ac4de6446321436495ac4030fcb2dcb4575cf7</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=49">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a05324c323d1176590ede360ae1d64c11f663bc0</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=5">
+    <music:collaborative>False</music:collaborative>
+    <music::hasExternalURL>http://open.spotify.com/user/9clojj7uw5ss7h1x7uwl8k4fl/playlist/3vNVJkdPel1GJPUfrOfb61</music::hasExternalURL>
+    <music::hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl/playlists/3vNVJkdPel1GJPUfrOfb61</music::hasHref>
+    <music::hasId>3vNVJkdPel1GJPUfrOfb61</music::hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/640/e60e143c955ab6c8aeda4edf934c94e5b7662e4f400c2aacb056cd051afedee8a4896a97c079e68decbc71f031d40de0c941e33a661e3aca1b3422551d48471d10e2fe5516d57f974d12506ef5b0c905</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music::name>Createdbyramya</music::name>
+    <music:hasmusic:name>Madhavilathab</music:hasmusic:name>
+    <music:hasExternalURL>http://open.spotify.com/user/9clojj7uw5ss7h1x7uwl8k4fl</music:hasExternalURL>
+    <music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl</music:hasHref>
+    <music:hasId>9clojj7uw5ss7h1x7uwl8k4fl</music:hasId>
+    <music:hasType>user</music:hasType>
+    <music:hasUri>spotify:user:9clojj7uw5ss7h1x7uwl8k4fl</music:hasUri>
+    <music:public>True</music:public>
+    <music:snapshot_music:hasId>/9IV3voEBHNZbSajqIgk59Snr/nIzpWuR6iL3mdDHMxHHH1VFNpWmD33HQZi6LUG</music:snapshot_music:hasId>
+    <music:tracks_music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl/playlists/3vNVJkdPel1GJPUfrOfb61/tracks</music:tracks_music:hasHref>
+    <music:tracks_total>6</music:tracks_total>
+    <music::hasType>playlist</music::hasType>
+    <music::hasUri>spotify:user:9clojj7uw5ss7h1x7uwl8k4fl:playlist:3vNVJkdPel1GJPUfrOfb61</music::hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=50">
+    <music:hasExternalURL>https://open.spotify.com/artist/1MT1Wz4G9Z9EVOg4L5zZMS</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>268516</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>deep pop r&amp;b</music:music:hasgenres002>
+    <music:hasgenres003>hip pop</music:hasgenres003>
+    <music:hasgenres004>neo soul</music:hasgenres004>
+    <music:hasgenres005>new jack swing</music:hasgenres005>
+    <music:hasgenres006>pop christmas</music:hasgenres006>
+    <music:hasgenres007>r&amp;b</music:hasgenres007>
+    <music:hasgenres008>soul christmas</music:hasgenres008>
+    <music:hasgenres009>urban contemporary</music:hasgenres009>
+    <music:hasHref>https://api.spotify.com/v1/artists/1MT1Wz4G9Z9EVOg4L5zZMS</music:hasHref>
+    <music:hasId>1MT1Wz4G9Z9EVOg4L5zZMS</music:hasId>
+    <music:hasheight>351</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/26b47451212dbc5b72ee5e2563c641136d4db76b</music:hasurl>
+    <music:hasId>500</music:hasId>
+    <music:name>Tamar Braxton</music:name>
+    <music:popularity>65</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1MT1Wz4G9Z9EVOg4L5zZMS</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=51">
+    <music:hasheight>140</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/01a298ee8565581039c7851b35e2e1d173795a95</music:hasurl>
+    <music:hasId>199</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=52">
+    <music:hasheight>45</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/bba5c3c584d6e535de32284e9702f29d96d281d9</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=53">
+    <music:hasExternalURL>https://open.spotify.com/artist/1OJleZN9LjkVBrmwc05NG2</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>2074</music:hasFollowersTotal>
+    <music:music:hasgenres001>lds</music:music:hasgenres001>
+    <music:hasHref>https://api.spotify.com/v1/artists/1OJleZN9LjkVBrmwc05NG2</music:hasHref>
+    <music:hasId>1OJleZN9LjkVBrmwc05NG2</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/496ceb5a9f9b142aeb515730e708bd4bddd64d43</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Beyond 5</music:name>
+    <music:popularity>36</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1OJleZN9LjkVBrmwc05NG2</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=54">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/0d3bcda04d8574fccd2a413f65b7000a4a333cca</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=55">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/2daff98414ed70657c5a98fb19b9ab6728b6b06f</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=56">
+    <music:hasExternalURL>https://open.spotify.com/artist/1Oa0bMld0A3u5OTYfMzp5h</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>304178</music:hasFollowersTotal>
+    <music:music:hasgenres001>g funk</music:music:hasgenres001>
+    <music:music:hasgenres002>gangster rap</music:music:hasgenres002>
+    <music:hasgenres003>hip hop</music:hasgenres003>
+    <music:hasgenres004>pop christmas</music:hasgenres004>
+    <music:hasgenres005>pop rap</music:hasgenres005>
+    <music:hasgenres006>rap</music:hasgenres006>
+    <music:hasgenres007>west coast rap</music:hasgenres007>
+    <music:hasHref>https://api.spotify.com/v1/artists/1Oa0bMld0A3u5OTYfMzp5h</music:hasHref>
+    <music:hasId>1Oa0bMld0A3u5OTYfMzp5h</music:hasId>
+    <music:hasheight>1243</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/fd5d1f379a33ee26e2dfaf296bbab0970ec95ede</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Nate Dogg</music:name>
+    <music:popularity>81</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1Oa0bMld0A3u5OTYfMzp5h</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=57">
+    <music:hasheight>795</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/6ee73d7a40401620c5296011dedeea959bd039a0</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=58">
+    <music:hasheight>249</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/e5e37b75daf498d5c94f48d4de226d0a8914ef44</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=59">
+    <music:hasheight>80</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/6da3fe2807deed1d16e26ec24b183b9c23f2ea2e</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=6">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/300/e60e143c955ab6c8aeda4edf934c94e5b7662e4f400c2aacb056cd051afedee8a4896a97c079e68decbc71f031d40de0c941e33a661e3aca1b3422551d48471d10e2fe5516d57f974d12506ef5b0c905</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=60">
+    <music:hasExternalURL>https://open.spotify.com/artist/1QvyquqkuuwUzdszyoKIy4</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>2586</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep indian pop</music:music:hasgenres001>
+    <music:music:hasgenres002>desi</music:music:hasgenres002>
+    <music:hasgenres003>desi hip hop</music:hasgenres003>
+    <music:hasgenres004>filmi</music:hasgenres004>
+    <music:hasgenres005>indian pop</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/1QvyquqkuuwUzdszyoKIy4</music:hasHref>
+    <music:hasId>1QvyquqkuuwUzdszyoKIy4</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/b85c1db43e80df4e584162e72fbec96a52f435a3</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Haricharan</music:name>
+    <music:popularity>50</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1QvyquqkuuwUzdszyoKIy4</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=61">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/c6da92f23ef3dd19269d1cd1d86f2aa8a95034d6</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=62">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/14f85a257bdc9d17e3af8cffdec31fb01ca79f79</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=63">
+    <music:hasExternalURL>https://open.spotify.com/artist/1SJOL9HJ08YOn92lFcYf8a</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>12897</music:hasFollowersTotal>
+    <music:music:hasgenres001>deep indian pop</music:music:hasgenres001>
+    <music:music:hasgenres002>desi</music:music:hasgenres002>
+    <music:hasgenres003>desi hip hop</music:hasgenres003>
+    <music:hasgenres004>filmi</music:hasgenres004>
+    <music:hasgenres005>indian pop</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/1SJOL9HJ08YOn92lFcYf8a</music:hasHref>
+    <music:hasId>1SJOL9HJ08YOn92lFcYf8a</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/03531d3b78a74d53892d474d9595eee119c7d2b1</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Shankar Mahadevan</music:name>
+    <music:popularity>55</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1SJOL9HJ08YOn92lFcYf8a</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=64">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/42aa3ffb525017956f5fe2cdc7539c5d97f8dfcf</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=65">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/aeb0e888054b4ceb184513c262199b8b897cc15f</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=66">
+    <music:hasExternalURL>https://open.spotify.com/artist/1URnnhqYAYcrqrcwql10ft</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>2020708</music:hasFollowersTotal>
+    <music:music:hasgenres001>dwn trap</music:music:hasgenres001>
+    <music:music:hasgenres002>rap</music:music:hasgenres002>
+    <music:hasgenres003>trap music</music:hasgenres003>
+    <music:hasHref>https://api.spotify.com/v1/artists/1URnnhqYAYcrqrcwql10ft</music:hasHref>
+    <music:hasId>1URnnhqYAYcrqrcwql10ft</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/b0d670ac865dbfaf520997e7a8fadae15c7729bb</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>21 Savage</music:name>
+    <music:popularity>98</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1URnnhqYAYcrqrcwql10ft</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=67">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d664edbc9c83c443a56a5d97a44a105e27c20d20</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=68">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/b31d1b94f4da2d9647b351791b77e4c076262853</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=69">
+    <music:hasExternalURL>https://open.spotify.com/artist/1dVygo6tRFXC8CSWURQJq2</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>28295</music:hasFollowersTotal>
+    <music:music:hasgenres001>desi</music:music:hasgenres001>
+    <music:music:hasgenres002>desi hip hop</music:music:hasgenres002>
+    <music:hasgenres003>filmi</music:hasgenres003>
+    <music:hasgenres004>indian pop</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/1dVygo6tRFXC8CSWURQJq2</music:hasHref>
+    <music:hasId>1dVygo6tRFXC8CSWURQJq2</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/49506fe1727b497e063ab085e7f98f615610cb8f</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Sonu Nigam</music:name>
+    <music:popularity>58</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1dVygo6tRFXC8CSWURQJq2</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=7">
+    <music:hasheight>60</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/60/e60e143c955ab6c8aeda4edf934c94e5b7662e4f400c2aacb056cd051afedee8a4896a97c079e68decbc71f031d40de0c941e33a661e3aca1b3422551d48471d10e2fe5516d57f974d12506ef5b0c905</music:hasurl>
+    <music:hasId>60</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=70">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a762918f67bfb177d26ad21e81f094d60b446a3a</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=71">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4c02393e48f482ca50d47a42ab5dcf338bb29568</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=72">
+    <music:hasExternalURL>https://open.spotify.com/artist/1fDLfG3k8h1ZFn2YtzsOhf</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>2669</music:hasFollowersTotal>
+    <music:music:hasgenres001>channel pop</music:music:hasgenres001>
+    <music:hasHref>https://api.spotify.com/v1/artists/1fDLfG3k8h1ZFn2YtzsOhf</music:hasHref>
+    <music:hasId>1fDLfG3k8h1ZFn2YtzsOhf</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/a8cc0537c66fc074515ad92170b12d71b62f48a5</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Tay Watts</music:name>
+    <music:popularity>42</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1fDLfG3k8h1ZFn2YtzsOhf</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=73">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/bcc7be4756362d71a7c897f1bca037864e56f32a</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=74">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d9be74c11e55dcecce867afc7aafb150d0ec1eee</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=75">
+    <music:hasExternalURL>https://open.spotify.com/artist/1l8Fu6IkuTP0U5QetQJ5Xt</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>3515542</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>post-teen pop</music:hasgenres003>
+    <music:hasgenres004>talent show</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/1l8Fu6IkuTP0U5QetQJ5Xt</music:hasHref>
+    <music:hasId>1l8Fu6IkuTP0U5QetQJ5Xt</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/c5e2e813755c107d8f4b068ec1001ea0f91409f1</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Fifth Harmony</music:name>
+    <music:popularity>87</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1l8Fu6IkuTP0U5QetQJ5Xt</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=76">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/41935c973086a4e4ad47dfda8914eb4a4aca1423</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=77">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/27a42ab5ba14d9d941aa6801ce2e85806d6f9b32</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=78">
+    <music:hasExternalURL>https://open.spotify.com/artist/1rymusic:hasIdQiTzFFxHmmjijqghs</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>30961</music:hasFollowersTotal>
+    <music:music:hasgenres001>pop christmas</music:music:hasgenres001>
+    <music:music:hasgenres002>post-teen pop</music:music:hasgenres002>
+    <music:hasHref>https://api.spotify.com/v1/artists/1rymusic:hasIdQiTzFFxHmmjijqghs</music:hasHref>
+    <music:hasId>1rymusic:hasIdQiTzFFxHmmjijqghs</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/ce8722504a1908bc03e7a7f40526803fd8371531</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Drew Seeley</music:name>
+    <music:popularity>47</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1rymusic:hasIdQiTzFFxHmmjijqghs</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=79">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/200f42d4864069cb4783a18301a958e01256f105</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=8">
+    <music:collaborative>False</music:collaborative>
+    <music::hasExternalURL>http://open.spotify.com/user/9clojj7uw5ss7h1x7uwl8k4fl/playlist/5wogZdWEw1lHnUxIa7kfdU</music::hasExternalURL>
+    <music::hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl/playlists/5wogZdWEw1lHnUxIa7kfdU</music::hasHref>
+    <music::hasId>5wogZdWEw1lHnUxIa7kfdU</music::hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/640/e6a84983ed9b0a04ce633b021329f7df034e7c7c5acb2a5b069c2f14f6e7efd5daa9bd340131ca47506b3aee8a743d125460453499a56cb64e5a43ecb3d71d7a20d41146f24a7569c0869dfb3b16e860</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music::name>Fav</music::name>
+    <music:hasmusic:name>Madhavilathab</music:hasmusic:name>
+    <music:hasExternalURL>http://open.spotify.com/user/9clojj7uw5ss7h1x7uwl8k4fl</music:hasExternalURL>
+    <music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl</music:hasHref>
+    <music:hasId>9clojj7uw5ss7h1x7uwl8k4fl</music:hasId>
+    <music:hasType>user</music:hasType>
+    <music:hasUri>spotify:user:9clojj7uw5ss7h1x7uwl8k4fl</music:hasUri>
+    <music:public>True</music:public>
+    <music:snapshot_music:hasId>5/v3M2NpVGxE45uoi15pLbrTKKGl7yrjsGMvrOHK3zuXNNKjtjYKUMqrJMl8cwvU</music:snapshot_music:hasId>
+    <music:tracks_music:hasHref>https://api.spotify.com/v1/users/9clojj7uw5ss7h1x7uwl8k4fl/playlists/5wogZdWEw1lHnUxIa7kfdU/tracks</music:tracks_music:hasHref>
+    <music:tracks_total>14</music:tracks_total>
+    <music::hasType>playlist</music::hasType>
+    <music::hasUri>spotify:user:9clojj7uw5ss7h1x7uwl8k4fl:playlist:5wogZdWEw1lHnUxIa7kfdU</music::hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=80">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/364cbc6fe83e8d6eb57f053d78026d80df2455bf</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=81">
+    <music:hasExternalURL>https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>14137344</music:hasFollowersTotal>
+    <music:music:hasgenres001>canadian pop</music:music:hasgenres001>
+    <music:music:hasgenres002>dance pop</music:music:hasgenres002>
+    <music:hasgenres003>pop</music:hasgenres003>
+    <music:hasgenres004>pop christmas</music:hasgenres004>
+    <music:hasgenres005>post-teen pop</music:hasgenres005>
+    <music:hasHref>https://api.spotify.com/v1/artists/1uNFoZAHBGtllmzznpCI3s</music:hasHref>
+    <music:hasId>1uNFoZAHBGtllmzznpCI3s</music:hasId>
+    <music:hasheight>1000</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/5c3cf2ee3494e2da71dcf26303202ec491b26213</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Justin Bieber</music:name>
+    <music:popularity>97</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1uNFoZAHBGtllmzznpCI3s</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=82">
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/2e451efa87b706098553583cffac821b7ebac450</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=83">
+    <music:hasheight>200</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/ca283ddea2afc65c15d802d45ee3d3fd255ab4e2</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=84">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/ce41eb4beaad8d07fd55a68aba16b27e341a2e4f</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=85">
+    <music:hasExternalURL>https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>37491</music:hasFollowersTotal>
+    <music:music:hasgenres001>desi</music:music:hasgenres001>
+    <music:music:hasgenres002>desi hip hop</music:music:hasgenres002>
+    <music:hasgenres003>filmi</music:hasgenres003>
+    <music:hasgenres004>indian pop</music:hasgenres004>
+    <music:hasHref>https://api.spotify.com/v1/artists/1wRPtKGflJrBx9BmLsSwlU</music:hasHref>
+    <music:hasId>1wRPtKGflJrBx9BmLsSwlU</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/45a372c4c26b016acd3916d03ed692d8336caeeb</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Pritam</music:name>
+    <music:popularity>65</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1wRPtKGflJrBx9BmLsSwlU</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=86">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4e6dac9c7399a677f59133986c4ff874fbb5eca1</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=87">
+    <music:hasheight>64</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/ea24696e6facc255fc45b5eb155c8f6ba661c05c</music:hasurl>
+    <music:hasId>64</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=88">
+    <music:hasExternalURL>https://open.spotify.com/artist/1xHQO9GJIW9OXHxGBISYc5</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>293879</music:hasFollowersTotal>
+    <music:music:hasgenres001>indie r&amp;b</music:music:hasgenres001>
+    <music:hasHref>https://api.spotify.com/v1/artists/1xHQO9GJIW9OXHxGBISYc5</music:hasHref>
+    <music:hasId>1xHQO9GJIW9OXHxGBISYc5</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/c83d813cb11913bec2993793849552afc1e0faef</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Marian Hill</music:name>
+    <music:popularity>71</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:1xHQO9GJIW9OXHxGBISYc5</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=89">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/cac011fa2b230fc860286132c0b941d03f448c36</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=9">
+    <music:hasheight>300</music:hasheight>
+    <music:hasurl>https://mosaic.scdn.co/300/e6a84983ed9b0a04ce633b021329f7df034e7c7c5acb2a5b069c2f14f6e7efd5daa9bd340131ca47506b3aee8a743d125460453499a56cb64e5a43ecb3d71d7a20d41146f24a7569c0869dfb3b16e860</music:hasurl>
+    <music:hasId>300</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=90">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/f52862cc4900c1e7a52958d41f393872068dce8f</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=91">
+    <music:hasExternalURL>https://open.spotify.com/artist/22kkuXdiuYd7ISzXU5o7eH</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>1887</music:hasFollowersTotal>
+    <music:music:hasgenres001>compositional ambient</music:music:hasgenres001>
+    <music:music:hasgenres002>focus</music:music:hasgenres002>
+    <music:hasHref>https://api.spotify.com/v1/artists/22kkuXdiuYd7ISzXU5o7eH</music:hasHref>
+    <music:hasId>22kkuXdiuYd7ISzXU5o7eH</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/4ad239e053bb85c31aeaf4d5e9d61f83f8ec6ae3</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Bruno Bavota</music:name>
+    <music:popularity>60</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:22kkuXdiuYd7ISzXU5o7eH</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=92">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/7ca4ce16502980c148673d6c36b32f74a672585d</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=93">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/958b8a8420ef6a19db58b14c7d0563cd6a415e3c</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=94">
+    <music:hasExternalURL>https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>774593</music:hasFollowersTotal>
+    <music:music:hasgenres001>candy pop</music:music:hasgenres001>
+    <music:music:hasgenres002>dance pop</music:music:hasgenres002>
+    <music:hasgenres003>indie poptimism</music:hasgenres003>
+    <music:hasgenres004>metropopolis</music:hasgenres004>
+    <music:hasgenres005>pop</music:hasgenres005>
+    <music:hasgenres006>post-teen pop</music:hasgenres006>
+    <music:hasgenres007>tropical house</music:hasgenres007>
+    <music:hasHref>https://api.spotify.com/v1/artists/25uiPmTg16RbhZWAqwLBy5</music:hasHref>
+    <music:hasId>25uiPmTg16RbhZWAqwLBy5</music:hasId>
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/d9c2123cd9e58170e435140390d2c07e7580a756</music:hasurl>
+    <music:hasId>640</music:hasId>
+    <music:name>Charli XCX</music:name>
+    <music:popularity>79</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:25uiPmTg16RbhZWAqwLBy5</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=95">
+    <music:hasheight>320</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/9cf76f9f287f02228d3089942a822b066e8598b2</music:hasurl>
+    <music:hasId>320</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=96">
+    <music:hasheight>160</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/31ef882cfa8cfcc04d9cde2718d9d026635d2b80</music:hasurl>
+    <music:hasId>160</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=97">
+    <music:hasExternalURL>https://open.spotify.com/artist/26dSoYclwsYLMAKD3tpOr4</music:hasExternalURL>
+    <music:hasFollowers>null</music:hasFollowers>
+    <music:hasFollowersTotal>2824645</music:hasFollowersTotal>
+    <music:music:hasgenres001>dance pop</music:music:hasgenres001>
+    <music:music:hasgenres002>pop</music:music:hasgenres002>
+    <music:hasgenres003>pop christmas</music:hasgenres003>
+    <music:hasgenres004>pop rap</music:hasgenres004>
+    <music:hasgenres005>post-teen pop</music:hasgenres005>
+    <music:hasgenres006>r&amp;b</music:hasgenres006>
+    <music:hasgenres007>urban contemporary</music:hasgenres007>
+    <music:hasHref>https://api.spotify.com/v1/artists/26dSoYclwsYLMAKD3tpOr4</music:hasHref>
+    <music:hasId>26dSoYclwsYLMAKD3tpOr4</music:hasId>
+    <music:hasheight>1000</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/7fa2bde8d2837784a847f8201686b257757a749f</music:hasurl>
+    <music:hasId>1000</music:hasId>
+    <music:name>Britney Spears</music:name>
+    <music:popularity>83</music:popularity>
+    <music:hasType>artist</music:hasType>
+    <music:hasUri>spotify:artist:26dSoYclwsYLMAKD3tpOr4</music:hasUri>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=98">
+    <music:hasheight>640</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/f3f0e89644c30c96e50ddd483e3abedf744a460f</music:hasurl>
+    <music:hasId>640</music:hasId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/object_1.csv#row=99">
+    <music:hasheight>200</music:hasheight>
+    <music:hasurl>https://i.scdn.co/image/18f8f2204dd44ecaaaf587ce4429493f01887d93</music:hasurl>
+    <music:hasId>200</music:hasId>
+  </rdf:Description>
+</rdf:RDF>
