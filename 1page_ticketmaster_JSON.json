@@ -120,7 +120,7 @@
         } ]
       },
       "type" : "event"
-    }, {
+    }	, {
       "name" : "Guns N' Roses - Upgrade VIP Packages",
       "locale" : "en-us",
       "eventUrl" : "http://livemu.sc/GnR-Nashville",
