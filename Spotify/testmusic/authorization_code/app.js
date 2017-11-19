@@ -17,11 +17,11 @@ var client_secret = '0b1daa19dd724200a09241e093273a7c'; // Your secret
 var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 
 var SpotifyWebApi = require('spotify-web-api-node');
-var scopes = ['user-read-private', 'user-read-email', 'playlist-read-private', 'playlist-read-collaborative', 'user-follow-read'],
-redirectUri = 'https://example.com/callback',
-clientId = '462eee0168014d178e3c9303d0b67ede',
-clientSecret = '0b1daa19dd724200a09241e093273a7c',
-state = 'some-state-of-my-choice';
+var scopes = ['user-read-private', 'user-read-email', 'playlist-read-private', 'playlist-read-collaborative', 'user-follow-read', 'user-library-read'],
+    redirectUri = 'https://example.com/callback',
+    clientId = '462eee0168014d178e3c9303d0b67ede',
+	clientSecret = '0b1daa19dd724200a09241e093273a7c',
+    state = 'some-state-of-my-choice';
 
 // Setting credentials can be done in the wrapper's constructor, or using the API object's setters.
 var spotifyApi = new SpotifyWebApi({
@@ -58,7 +58,7 @@ app.get('/login', function(req, res) {
   res.cookie(stateKey, state);
 
   // your application requests authorization
-  var scope = 'user-read-private user-read-email user-follow-read';
+  var scope = 'user-read-private user-read-email user-follow-read user-library-read playlist-read-private playlist-read-collaborative';
   res.redirect('https://accounts.spotify.com/authorize?' +
     querystring.stringify({
       response_type: 'code',
@@ -114,22 +114,8 @@ app.get('/callback', function(req, res) {
         // use the access token to access the Spotify Web API
         request.get(options, function(error, response, body) {
           console.log(body);
-		  
-/*		  var fs = require('fs');
-		  spotifyApi.getFollowedArtists()
-		  .then(function(data) {
-			  	fs.writeFile("test.txt", 'This user is following ', data.body.artists.total, ' artists!', function(err) {
-				if(err) {
-					return console.log(err);
-				}
-				console.log("The file was saved!");
-			}); 
-
-						//console.log(data.body);
-		  }, function(err) {
-			console.error(err);
-		  });*/
         });
+
 		
 
 		spotifyApi.setAccessToken(access_token);
@@ -137,47 +123,202 @@ app.get('/callback', function(req, res) {
 
 		// https://accounts.spotify.com:443/authorize?client_id=5fe01282e44241328a84e7c5cc169165&response_type=code&redirect_uri=https://example.com/callback&scope=user-read-private%20user-read-email&state=some-state-of-my-choice
 		console.log(authorizeURL);
-		//writing to file
+
+		//HERE GOES CODE FROM SPOTIFYTEST.JS
+
 		var fs = require('fs');
 
 		// Get a user
 		spotifyApi.getUser('9clojj7uw5ss7h1x7uwl8k4fl')
-		  .then(function(data) { 
-			console.log('Some information about this user\n \n', data.body);
-			fs.writeFile("/test.json",  JSON.stringify(data.body), function(err) {
-				if(err) {
-					return console.log(err);
-				}
-				console.log("The file was saved!");
-			}); 
-		  }, function(err) {
-			console.log('Something went wrong!', err);
-		  });
-	/*	  //user has songs
-		  spotifyApi.getUserPlaylists('9clojj7uw5ss7h1x7uwl8k4fl')
 		  .then(function(data) {
-			console.log('Retrieved playlists', data.body);
-		  },function(err) {
-			console.log('Something went wrong!', err);
-		  });
-		//User follows artists
-		  spotifyApi.getFollowedArtists({limit:50})
-		  .then(function(data) {
-			// 'This user is following 1051 artists!'
-			console.log('This user is following ', JSON.stringify(data.body.artists), ' artists!');
+			fs.writeFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
+				if (err) {
+					console.error(err);
+					return;
+				};
+				console.log("File has been created");
+			});
+			console.log('Some information about this user', data.body);
 		  }, function(err) {
 			console.log('Something went wrong!', err);
 		  });
 		  
-		 // Get artists related to an artist
-		spotifyApi.getArtistRelatedArtists('0qeei9KQnptjwb8MgkqEoy')
+		  //user has songs
+		  spotifyApi.getUserPlaylists('9clojj7uw5ss7h1x7uwl8k4fl', {limit:50})
 		  .then(function(data) {
-			console.log(data.body);
+			fs.appendFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
+			if (err) {
+				console.error(err);
+				return;
+			};
+			console.log("File has been appended");
+			});
+			//console.log('Retrieved playlists', data.body);
+		  },function(err) {
+			console.log('Something went wrong!', err);
+		  });
+  
+		//User follows artists
+		  spotifyApi.getFollowedArtists({limit:50})
+		  .then(function(data) {
+			sampleObject=data.body;
+			fs.appendFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
+			if (err) {
+				console.error(err);
+				return;
+			};
+			console.log("File has been appended");
+			console.log('\n \n ');
+			
+			setTimeout(function(){
+				console.log('This user is following ', sampleObject.artists.cursors.after, ' artists!');
+				console.log('\n \n ');
+				}, 10000);
+			
+			if(typeof data.body=='object'){
+				console.log('yes');
+				console.log('artists ids: \n');
+				var sampleObject = data.body;
+				//var count=0;
+				//console.log(data.body);
+				sampleObject.artists.items.forEach(function(k){
+					console.log(k.id+'\n');
+					//count++;
+					 // Get artists related to an artist
+						spotifyApi.getArtistRelatedArtists(k.id)
+						  .then(function(data) {
+							fs.appendFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
+							if (err) {
+								console.error(err);
+								return;
+							};
+							console.log("File has been appended, these are related artists");
+							//console.log('\n count= '+count);
+							});
+							console.log(data.body);
+						  }, function(err) {
+							done(err);
+						  });
+				});
+			//console.log('\n count= '+count);
+			}
+			else{
+				console.log('hell no');
+			} 
+				
+			});
+			//console.log('This user is following ', JSON.stringify(data.body.artists), ' artists!');
 		  }, function(err) {
-			done(err);
-		  }); */
+			console.log('Something went wrong!', err);
+		  });
+		
+		
+		
+		//Next set of artists
+		  spotifyApi.getFollowedArtists({limit:50, after:'4AVFqumd2ogHFlRbKIjp1t'})
+		  .then(function(data) {
+			sampleObject=data.body;
+			fs.appendFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
+			if (err) {
+				console.error(err);
+				return;
+			};
+			console.log("File has been appended");
+			console.log('\n \n ');
+			
+			setTimeout(function(){
+				console.log('This user is following ', sampleObject.artists.cursors.after, ' artists!');
+				console.log('\n \n ');
+				}, 10000);
+			
+			if(typeof data.body=='object'){
+				console.log('yes');
+				console.log('artists ids: \n');
+				var sampleObject = data.body;
+				//var count=0;
+				//console.log(data.body);
+				sampleObject.artists.items.forEach(function(k){
+					console.log(k.id+'\n');
+					//count++;
+					 // Get artists related to an artist
+						spotifyApi.getArtistRelatedArtists(k.id)
+						  .then(function(data) {
+							fs.appendFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
+							if (err) {
+								console.error(err);
+								return;
+							};
+							console.log("File has been appended, these are related artists");
+							//console.log('\n count= '+count);
+							});
+							console.log(data.body);
+						  }, function(err) {
+							done(err);
+						  });
+				});
+			//console.log('\n count= '+count);
+			}
+			else{
+				console.log('hell no');
+			} 
+				
+			});
+			//console.log('This user is following ', JSON.stringify(data.body.artists), ' artists!');
+		  }, function(err) {
+			console.log('Something went wrong!', err);
+		  });
+			console.log('\n \n');
+			
+			
+			
+	// Get tracks in the signed in user's Your Music library
+		spotifyApi.getMySavedTracks({limit : 50})
+		  .then(function(data) {
+			console.log(data.body.items);
+			fs.appendFile("./object.json", JSON.stringify(data.body.items, null, '\t'), (err) => {
+							if (err) {
+								console.error(err);
+								return;
+							};
+							console.log("File has been appended, these are users saved tracks");
+							//console.log('\n count= '+count);
+							});
+			console.log('Done-tracks retrieved!');
+		  }, function(err) {
+			console.log('Something went wrong-tracks!', err);
+		  });
+		  console.log('\n \n');
+		 // Get albums in the signed in user's Your Music library
+		  spotifyApi.getMySavedAlbums({limit : 50})
+		  .then(function(data) {
+			// Output items
+			console.log(data.body.items);
+		  }, function(err) {
+			console.log('Something went wrong!', err);
+		  }); 
+		  
+		  //to check if albums are getting retrieved-timeout
+		 setTimeout(function(){ spotifyApi.getMySavedAlbums({limit : 50})
+		  .then(function(data) {
+			// Output items
+			console.log(data.body.items);
+							fs.appendFile("./object.json", JSON.stringify(data.body.items, null, '\t'), (err) => {
+							if (err) {
+								console.error(err);
+								return;
+							};
+							console.log("File has been appended, these are users saved albums");
+							//console.log('\n count= '+count);
+							});
+			console.log('Albums retrieved!');
+		  }, function(err) {
+			console.log('Something went wrong-albums!', err);
+		  }); }, 3000);
+	
+		 setTimeout(function(){ console.log(access_token); }, 5000);  
+       
 
-        // we can also pass the token to the browser to make requests from there
+	   // we can also pass the token to the browser to make requests from there
         res.redirect('/#' +
           querystring.stringify({
             access_token: access_token,

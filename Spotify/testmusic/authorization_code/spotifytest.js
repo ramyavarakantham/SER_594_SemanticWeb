@@ -1,5 +1,5 @@
 var SpotifyWebApi = require('spotify-web-api-node');
-var scopes = ['user-read-private', 'user-read-email', 'playlist-read-private', 'playlist-read-collaborative', 'user-follow-read'],
+var scopes = ['user-read-private', 'user-read-email', 'playlist-read-private', 'playlist-read-collaborative', 'user-follow-read', 'user-library-read'],
     redirectUri = 'https://example.com/callback',
     clientId = '462eee0168014d178e3c9303d0b67ede',
 	clientSecret = '0b1daa19dd724200a09241e093273a7c',
@@ -12,49 +12,30 @@ var spotifyApi = new SpotifyWebApi({
   clientSecret : clientSecret
 });
 
-spotifyApi.setAccessToken('BQDKz1NMX9PlZI0CsC-KLOFT2lAM7tel1RpWNPGoGm89iy5IA9iKxyd0C1yMorpEyyJ732UXG2nurInYPPeKumzvuN7OPFbp9S4SCwGnTbD449yRGPxKwa8xVIr1kStJR6t2GYZlMEhbDAgWJSpwdv-2D_qd4rhJ1wxa4Lj4ceEtNYc4WInqXiFTRf_kw9U');
+spotifyApi.setAccessToken('BQAEMG26om0TSQ6XnPFfqWNM-E3KfrEwsBZnEk4O-xaeEU2MqowA_5yjb9OYthNUUE4g9I7oJ7_aWgAeBg3ol0NsAwh8AbisjaEHPvQFLJOm9n9FxBg9zQjEGxxE_Uu0v2FIlg8uJrBnhGvh5gJnLR09OwpgxTkCPZui1iBohxetVF36CLRJ2N7u5CPhXROgva-QFxjpDYKgOw');
 // Create the authorization URL
 var authorizeURL = spotifyApi.createAuthorizeURL(scopes, state);
 
 // https://accounts.spotify.com:443/authorize?client_id=5fe01282e44241328a84e7c5cc169165&response_type=code&redirect_uri=https://example.com/callback&scope=user-read-private%20user-read-email&state=some-state-of-my-choice
-console.log(authorizeURL);
+//console.log(authorizeURL);
 
 var fs = require('fs');
+ 
+var sampleObject;
 
-// Get a user
-spotifyApi.getUser('9clojj7uw5ss7h1x7uwl8k4fl')
-  .then(function(data) {
-	fs.writeFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
-		if (err) {
-			console.error(err);
-			return;
-		};
-		console.log("File has been created");
-	});
-    console.log('Some information about this user', data.body);
-  }, function(err) {
-    console.log('Something went wrong!', err);
-  });
-  
-  //user has songs
-  spotifyApi.getUserPlaylists('9clojj7uw5ss7h1x7uwl8k4fl')
-  .then(function(data) {
-	fs.appendFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
-	if (err) {
-		console.error(err);
-		return;
-	};
-	console.log("File has been appended");
-	});
-    console.log('Retrieved playlists', data.body);
-  },function(err) {
-    console.log('Something went wrong!', err);
-  });
+
+
 //User follows artists
-  spotifyApi.getFollowedArtists({limit:50})
-  .then(function(data) {
-    // 'This user is following 1051 artists!
-	fs.appendFile("./object.json", JSON.stringify(data.body, null, '\t'), (err) => {
+
+	var count=0;
+
+	
+
+  spotifyApi.getFollowedArtists({limit:50}).then(function(data) {
+
+	sampleObject=data.body;
+
+	fs.appendFile("./artists.json", JSON.stringify(data.body, null, '\t'), (err) => {
 	if (err) {
 		console.error(err);
 		return;
@@ -62,13 +43,30 @@ spotifyApi.getUser('9clojj7uw5ss7h1x7uwl8k4fl')
 	console.log("File has been appended");
 	console.log('\n \n ');
 	
-	if(typeof data.body=='object'){
+	getRelated(data.body);
+		
+	});
+	console.log('\n\n This is next \n');
+	count =Math.round(sampleObject.artists.total / 50);//2
+	x=sampleObject.artists.cursors.after;
+	console.log(x);		
+	console.log(count);
+  }, function(err) {
+    console.log('Something went wrong!', err);
+  });
+
+  
+  function getRelated(d){
+	  
+	if(typeof d=='object'){
 		console.log('yes');
 		console.log('artists ids: \n');
-		var sampleObject = data.body;
+		var sampleObject = d;
+		//var count=0;
 		//console.log(data.body);
 		sampleObject.artists.items.forEach(function(k){
 			console.log(k.id+'\n');
+			//count++;
 			 // Get artists related to an artist
 				spotifyApi.getArtistRelatedArtists(k.id)
 				  .then(function(data) {
@@ -84,15 +82,19 @@ spotifyApi.getUser('9clojj7uw5ss7h1x7uwl8k4fl')
 					done(err);
 				  });
 		});
-		console.log('\n');
+		//console.log('\n count= '+count);
 	}
 	else{
 		console.log('hell no');
 	}
-		
-	});
-    console.log('This user is following ', JSON.stringify(data.body.artists), ' artists!');
-  }, function(err) {
-    console.log('Something went wrong!', err);
-  });
+  }
+
+
+
+
+  
+ /* 	sampleObject.artists.forEach(function(k){
+    console.log(k.id+'\n');
+});
+  */
   

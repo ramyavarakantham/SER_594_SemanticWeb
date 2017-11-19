@@ -8,6 +8,7 @@
     "express": "~4.0.0",
     "querystring": "~0.2.0",
     "request": "~2.34.0",
+    "spotify-web-api-js": "^0.22.1",
     "spotify-web-api-node": "^2.5.0"
   }
 }
