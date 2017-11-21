@@ -1,4 +1,8 @@
 var fs = require("fs");
+
+ 
+//Create an empty hash set 
+var hashset = new Set();
 var sampleObject ={
 	"artists": [
 		{
@@ -72039,6 +72043,15 @@ var sampleObject ={
 		}
 	]
 };*/
-sampleObject.artists.forEach(function(k){
+/*sampleObject.artists.forEach(function(k){
 	console.log(k.name+'\n');
-});
+});*/
+
+hashset.add('ramya');
+hashset.add('shravya');
+hashset.add('ramya');
+hashset.forEach(function(item) {  
+      
+    console.log( item + "\n");  
+
+});  
