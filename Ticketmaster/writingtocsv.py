@@ -6,19 +6,20 @@ Created on Sat Nov 18 19:42:34 2017
 """
 #--- Om ---
 import json, urllib.request
+import csv
 
 apikey = "NMEBsheK4L4YZ3klx7m50evZnbAtdSoi"
 
 url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=" + apikey
 USTempe_url = "&countryCode=US&latitude=33.4255&longitude=111.9400"
 
-csv_outfile = open("CSV_file.csv", 'w')
-csv_outfile.write(str([ "Event Name", "Event_url", "Venue Address", "Venue City", 
+csv_file = open("CSV_file.csv", 'w')
+csv_outfile = csv.writer(csv_file, delimiter=',', lineterminator='\n')
+csv_outfile.writerow([ "Event Name", "Event_url", "Venue Address", "Venue City", 
                        "Venue State", "Venue Country", "Latitude", "Longitude", 
-                       "Time Zone", "Date", "Time" ])) # "Event Information", "Further Notes" 
-csv_outfile.write("\n")
+                       "Time Zone", "Date", "Time" ]) # "Event Information", "Further Notes" 
 
-for k in range(1,2):
+for k in range(1,500):
     
     page_url = '&page='+ str(k)
     url_addpage = url + USTempe_url + page_url
@@ -46,26 +47,27 @@ for k in range(1,2):
         decoded_event_content = event_content.decode("utf-8")
         json_event_data = json.loads(decoded_event_content)
         
-        event_name = json_event_data["name"]
-        event_url = json_event_data["url"]
-        venue_address = json_event_data["_embedded"]["venues"][0]["address"]["line1"]
-        venue_city =  json_event_data["_embedded"]["venues"][0]["city"]
-        venue_state =  json_event_data["_embedded"]["venues"][0]["state"]["name"]
-        venue_country =  json_event_data["_embedded"]["venues"][0]["country"]["name"]
-        venue_latitude = json_event_data["_embedded"]["venues"][0]["location"]["latitude"]
-        venue_longitude = json_event_data["_embedded"]["venues"][0]["location"]["longitude"]
-        venue_timezone = json_event_data["_embedded"]["venues"][0]["timezone"]    
-        venue_date = json_event_data["dates"]["start"]["localDate"]
-        venue_time = json_event_data["dates"]["start"]["localTime"]
-        #event_info = json_event_data["info"]
-        #event_note = json_event_data["pleaseNote"]
+        try:  
+            event_name = json_event_data["name"]
+            event_url = json_event_data["url"]
+            venue_address = json_event_data["_embedded"]["venues"][0]["address"]["line1"]
+            venue_city =  json_event_data["_embedded"]["venues"][0]["city"]["name"]
+            venue_state =  json_event_data["_embedded"]["venues"][0]["state"]["name"]
+            venue_country =  json_event_data["_embedded"]["venues"][0]["country"]["name"]
+            venue_latitude = json_event_data["_embedded"]["venues"][0]["location"]["latitude"]
+            venue_longitude = json_event_data["_embedded"]["venues"][0]["location"]["longitude"]
+            venue_timezone = json_event_data["_embedded"]["venues"][0]["timezone"]    
+            venue_date = json_event_data["dates"]["start"]["localDate"]
+            venue_time = json_event_data["dates"]["start"]["localTime"]
+            #event_info = json_event_data["info"]
+            #event_note = json_event_data["pleaseNote"]
+            csv_outfile.writerow([ event_name, event_url, venue_address, venue_city, venue_state, venue_country,
+                                   venue_latitude, venue_longitude, venue_timezone, venue_date, venue_time ])
+        #csv_file.write("\n")
+        except KeyError:
+            print("Key is not found in the event related info")
         
-        
-        csv_outfile.write(str([ event_name, event_url, venue_address, venue_city, venue_state, venue_country,
-                               venue_latitude, venue_longitude, venue_timezone, venue_date, venue_time ]))
-        csv_outfile.write("\n")
-
-csv_outfile.close()
+csv_file.close()
     
     
 
