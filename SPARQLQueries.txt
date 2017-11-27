@@ -1,0 +1,33 @@
+prefix eventful:<http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#>
+select ?Latitude where {?Event eventful:Latitude ?Latitude}
+
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+}
+LIMIT 25
+
+
+prefix TM:<http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#>
+select ?EventName ?eventurl ?address ?eventArtist ?priceRange ?datetime {
+GRAPH <http://localhost:3030/evenetds/data/TM>
+{
+?Event TM:name ?EventName .
+?Event TM:eventurl ?eventurl .
+?Event TM:address ?address .
+?Event TM:eventArtist ?eventArtist .
+  optional {?Event TM:priceRange ?priceRange .}
+?Event TM:Date ?datetime
+}
+ GRAPH <http://localhost:3030/evenetds/data/eventful>
+  {
+    ?Event TM:name ?EventName .
+?Event TM:eventurl ?eventurl .
+?Event TM:address ?address .
+?Event TM:eventArtist ?eventArtist .
+    optional {?Event TM:priceRange ?priceRange .}
+?Event TM:Date ?datetime
+  } 
+}
+
+
