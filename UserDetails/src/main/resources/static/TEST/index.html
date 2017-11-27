@@ -80,6 +80,13 @@
     </div>
 </div>
 
+<div class="row" style="padding-top: 100px;  ">
+
+        <div class = "col-xs-12 col-md-7" align="bottom">here we display the details of Distance</div>
+        <input type="submit" class="btn btn-success col-xs-12 col-md-3 pull-right"  value="Calculate Distance" ng-click="Distance()">
+
+    </div>
+</div>
     
 </body>
 
@@ -96,6 +103,13 @@
             url: 'http://localhost:8080/home'
         }
 		
+	
+		$scope.Distance = function()
+		{
+					 var req = {
+		            method: 'GET',
+		            url: 'http://localhost:8080/Distance'
+        }
 		
 
         $http(req).then(function(response) {
