@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>SER_594_EasyMusic_App</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -66,9 +66,14 @@
 
 
 
-    <div class="row" style="padding-top: 100px;  ">
+    <div class="row" style="padding-top: 50px;  ">
 
-        <div class = "col-xs-12 col-md-7" align="bottom">here we display the text associated with the login page</div>
+        <div class = "col-xs-12 col-md-7" align="bottom">User logs on to Spotify account <br />
+            API call is made to Spotify Web API to get user details, authorization URL, and user followed artists <br />
+            User’s location (latitude, longitude) is stored <br />
+            For every artist, SPARQL query is run to retrieve events belonging to that artist (EventFull and TicketMaster APIs) <br />
+            Events are filtered based on user’s location and user input radius <br />
+        </div>
         <input type="loginSpotifyButton" class="btn btn-success col-xs-12 col-md-3 pull-right" value="Login Using Spotify">
 
     </div>
