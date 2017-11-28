@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="US_en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SSD Automation</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <!-- custom css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- ng-table -->
+    <script type="text/javascript" src="lib/ng-table/ng-table.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/ng-table/ng-table.min.css">
+</head>
+
+<body ng-app="myApp1" ng-controller="myCtrl1">
+
+<div class="container">
+	
+</div>
+    
+</body>
+
+<script>
+
+	var app =  angular.module('myApp1', []);
+	
+	app.controller('myCtrl1', function($scope, $http){
+	
+	
+		 var req = {
+            method: 'GET',
+            url: 'http://localhost:8080/details'
+        }
+		
+		
+		global_token = "test";
+		 
+		 names = [];
+		
+
+        $http(req).then(function(response) {
+		
+              
+			
+				return response.data.value;
+			
+                
+            },
+            function(error) {
+                alert(error.data.message);
+            }).then(function(token){
+			
+			console.log("In Second");
+			var req_followed = {
+            method: 'GET',
+            url: 'https://api.spotify.com/v1/me/following?type=artist&limit=50',
+			headers: {
+				"Authorization": "Bearer "+token
+			}
+        }
+			
+			var x="4AVFqumd2ogHFlRbKIjp1t";
+			var url_gen="https://api.spotify.com/v1/me/following?limit=50&after="+x+"&type=artist";
+			var req_followed_after = {
+		            method: 'GET',
+		            url: url_gen,
+					headers: {
+						"Authorization": "Bearer "+token
+					}
+		        } 
+		
+		
+		 $http(req_followed).then(function(response) {
+               return response;
+				
+                
+            },
+            function(error) {
+                console.log(error);
+            }).then(sendData);;
+            
+			$http(req_followed_after).then(function(response) {
+	               return response;
+	            },
+	            function(error) {
+	                console.log(error);
+	            }).then(sendData);;
+			
+			
+			})
+		
+		
+	
+	function sendData(response)
+	{
+		
+
+			artists = response.data.artists.items;
+			
+			for (var i = 0; i < artists.length; i++) {
+				names.push(artists[i].name);
+		
+				}
+				console.log(names.length);
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else {
+					x.innerHTML = "Geolocation is not supported by this browser.";
+				}
+				
+				
+				function showPosition(position) {
+				latitude = position.coords.latitude
+				longitude = position.coords.longitude; 
+				
+				$http.post("http://localhost:8080/lat/"+latitude+"/lon/"+longitude, JSON.stringify(names)).then(function(response){
+	
+                console.log(response); //response should hold event details array
+                
+                //for every event location, construct this url for every mode of transport
+  /*               var modes=["driving", "walking", "transit", "bicycling"];
+                for(int i=0;i<modes.length;i++){
+                	var url_maps=
+                } */
+                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+                
+                $http.get(url_maps).then(function(response1){ //response1 holds json data for this request
+                	
+                	alert(response1.data.destination_addresses);
+                });
+                
+            },
+            function(error) {
+                alert(error.data.message);
+            });
+					
+		
+		}
+	}	
+		
+	});
+
+</script>
