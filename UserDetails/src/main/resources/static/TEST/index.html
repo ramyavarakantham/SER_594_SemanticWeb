@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="US_en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SSD Automation</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <!-- custom css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- ng-table -->
+    <script type="text/javascript" src="lib/ng-table/ng-table.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/ng-table/ng-table.min.css">
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<div class="container">
+	<input type="submit" class="btn btn-success" ng-click="check()"></input>
+</div>
+    
+</body>
+
+<script>
+
+	var app =  angular.module('myApp', []);
+	
+	app.controller('myCtrl', function($scope, $http){
+	
+		$scope.check = function()
+		{
+			 var req = {
+            method: 'GET',
+            url: 'http://localhost:8080/home'
+        }
+		
+		
+
+        $http(req).then(function(response) {
+                console.log(response.data);
+				window.open(response.data.value);
+                
+            },
+            function(error) {
+                alert(error.data.message);
+            });
+		}
+		
+	});
+
+</script>
