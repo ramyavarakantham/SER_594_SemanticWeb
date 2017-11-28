@@ -39,10 +39,6 @@ public class Test {
 	final String clientSecret = "598dd0757d0347f18eb02eac52711398";
 	final String redirectURI = "http://localhost:8080/callback";
 	
-	
-	final String str_to = "30.412677000,-87.215250000";
-	final String YOUR_API_KEY = "AIzaSyB_plBVGfV7uOJp6-RT2WZp0-LzaVOPqrc";
-	
 	 String accessToken = null;
 
 	final Api api = Api.builder()
@@ -100,7 +96,6 @@ public class Test {
     	/* Set the necessary scopes that the application will need from the user */
     	final List<String> scopes = Arrays.asList("user-read-private", "user-read-email", "playlist-read-private", "playlist-read-collaborative", "user-follow-read", "user-library-read");
 
-    	
     	/* Set a state. This is used to prevent cross site request forgeries. */
     	final String state = "someExpectedStateString";
 
@@ -119,31 +114,6 @@ public class Test {
         
     }
     
-    @RequestMapping(value = "/Distance", method=RequestMethod.GET, produces="application/json")
-    ResponseEntity<Response> Distance() {
-    	
-    	
-
-    	/*List of Distance, Travel and Travel modes*/
-    	final List<String> scopesGmaps = Arrays.asList("Distance", "Duration");
-    	
-    	/* Set a state. This is used to prevent cross site request forgeries. */
-    	final String state = "someExpectedStateString";
-
-		String authorizeURL = api.createAuthorizeURL(scopesGmaps, state);
-    	
-    	//System.out.println(authorizeURL);
-    	
-    	Response r =  new Response();
-    	r.setValue(authorizeURL);
-    	
-    	HttpHeaders res = new HttpHeaders();
-    	
-    	return new ResponseEntity<Response>(r , res, HttpStatus.OK);
-    	
-    	
-        
-    }
     
     @RequestMapping(value = "/details", method=RequestMethod.GET, produces="application/json")
     ResponseEntity<Response> getUserFollowers() throws Exception {
@@ -173,8 +143,6 @@ public class Test {
     		@RequestBody List<String> artists ) throws Exception {
     	
     	System.out.println(latitude+" "+longitude+" "+artists.get(0));
-    	
-    	
 
     	
     	
