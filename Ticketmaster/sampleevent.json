@@ -1,0 +1,114 @@
+{
+      "name" : "Levi's Stadium Tours & Museum",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-27T08:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "00:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-27T08:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "00:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1007578",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/1C0052DCCFAF6FFE?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10005?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/105?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2005985?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/229962?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "1C0052DCCFAF6FFE",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Levi's® Stadium Tours",
+          "marketId" : [ 41 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "CA"
+          },
+          "city" : {
+            "name" : "Santa Clara"
+          },
+          "location" : {
+            "latitude" : "37.403199437",
+            "longitude" : "-121.969806671"
+          },
+          "postalCode" : "95054",
+          "address" : {
+            "line1" : "4900 Marie P. DeBartolo Way",
+            "line2" : "Santa Clara, CA"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/229962?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "229962",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Miscellaneous",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10005?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10005",
+          "type" : "category"
+        }, {
+          "name" : "Expo/Convention",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/105?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "105",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Levis-Stadium-Tours-Museum-tickets/artist/2005985",
+          "image" : {
+            "url" : "/dam/a/571/81e2389c-603e-4f80-9b56-aad01bc53571_415401_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Levi's Stadium Tours & Museum",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2005985?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2005985",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    },

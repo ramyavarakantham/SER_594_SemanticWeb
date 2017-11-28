@@ -1,0 +1,2324 @@
+{
+  "_links" : {
+    "self" : {
+      "href" : "/discovery/v1/events.json?attraction=ed+sheeran{&page,size,sort}",
+      "templated" : true
+    },
+    "next" : {
+      "href" : "/discovery/v1/events.json?attraction=ed+sheeran&page=1&size=20{&sort}",
+      "templated" : true
+    }
+  },
+  "_embedded" : {
+    "events" : [	 {
+      "name" : "Levi's Stadium Tours & Museum",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-27T08:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "00:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-27T08:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "00:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1007578",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/1C0052DCCFAF6FFE?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10005?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/105?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2005985?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/229962?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "1C0052DCCFAF6FFE",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Levi's® Stadium Tours",
+          "marketId" : [ 41 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "CA"
+          },
+          "city" : {
+            "name" : "Santa Clara"
+          },
+          "location" : {
+            "latitude" : "37.403199437",
+            "longitude" : "-121.969806671"
+          },
+          "postalCode" : "95054",
+          "address" : {
+            "line1" : "4900 Marie P. DeBartolo Way",
+            "line2" : "Santa Clara, CA"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/229962?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "229962",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Miscellaneous",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10005?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10005",
+          "type" : "category"
+        }, {
+          "name" : "Expo/Convention",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/105?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "105",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Levis-Stadium-Tours-Museum-tickets/artist/2005985",
+          "image" : {
+            "url" : "/dam/a/571/81e2389c-603e-4f80-9b56-aad01bc53571_415401_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Levi's Stadium Tours & Museum",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2005985?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2005985",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Real Bodies At Bally's",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-27T18:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "10:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-27T18:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "10:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC829230",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/39005170CA416C8F?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2220857?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/467864?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "39005170CA416C8F",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Bally's Las Vegas",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.113885857",
+            "longitude" : "-115.169027805"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3655 Las Vegas Blvd. South",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467864?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467864",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "Museums and Exhibits",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "14",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Real-Bodies-tickets/artist/2220857",
+          "image" : {
+            "url" : "/dam/a/05e/4198226b-221d-46aa-beb6-e8c1f89cc05e_555141_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Real Bodies",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2220857?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2220857",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Exhibitionism - The Rolling Stones - Delivered by DHL",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-27T18:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "10:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-27T18:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "10:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1056419",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/1700531DD3834243?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2138314?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/189360?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "1700531DD3834243",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "The Lower Level at the Palazzo Lobby",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.121437396",
+            "longitude" : "-115.169807822"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3355 S Las Vegas Blvd",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/189360?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "189360",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "Museums and Exhibits",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "14",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Exhibitionism-The-Rolling-Stones-tickets/artist/2138314",
+          "image" : {
+            "url" : "/dam/a/c4c/7248ce97-42cc-4d96-ade6-7fa5eb966c4c_161001_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Exhibitionism - The Rolling Stones - Delivered by DHL",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2138314?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2138314",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Corey Dennison Blues Band, J.W. Williams & the Chi-Town Hustlers",
+      "locale" : "en-us",
+      "eventUrl" : "https://www.ticketweb.com/event/corey-dennison-blues-band-jw-kingston-mines--chicago-tickets/7841045?REFERRAL_ID=tmfeed",
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-27T22:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-27T22:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "timezone" : "America/Chicago",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1118890",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/2900536637BC4319?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/4?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2434210?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/337402?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "2900536637BC4319",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Kingston Mines - Chicago Blues Center",
+          "marketId" : [ 3 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "IL"
+          },
+          "city" : {
+            "name" : "Chicago"
+          },
+          "location" : {
+            "latitude" : "41.928694000",
+            "longitude" : "-87.649221000"
+          },
+          "postalCode" : "60614",
+          "address" : {
+            "line1" : "2548 North Halsted",
+            "line2" : "Chicago, IL"
+          },
+          "timeZone" : "America/Chicago",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/337402?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "337402",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Music",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10001",
+          "type" : "category"
+        }, {
+          "name" : "Jazz and Blues",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/4?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "4",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Corey-Dennison-Blues-Band-JW-Williams-tickets/artist/2434210",
+          "name" : "Corey Dennison Blues Band, J.W. Williams & the Chi-Town Hustlers",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2434210?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2434210",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Paranormal - The Mindreading Magic Show",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T00:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T00:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC867121",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/3900522D944A7B26?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10005?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/0?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : [ {
+          "href" : "/discovery/v1/attractions/2008675?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/attractions/1896524?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "venue" : {
+          "href" : "/discovery/v1/venues/467871?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "3900522D944A7B26",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Windows at Bally's Las Vegas",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.113764516",
+            "longitude" : "-115.168899059"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3655 Las Vegas Blvd. South",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467871?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467871",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Miscellaneous",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10005?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10005",
+          "type" : "category"
+        }, {
+          "name" : "More Miscellaneous",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/0?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "0",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Frederic-Da-Silva-tickets/artist/2008675",
+          "image" : {
+            "url" : "/dam/a/3ab/572d9207-3921-450c-a875-45e84727e3ab_304301_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Frederic Da Silva",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2008675?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2008675",
+          "type" : "attraction"
+        }, {
+          "url" : "/Paranormal-tickets/artist/1896524",
+          "name" : "Paranormal",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/1896524?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1896524",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : " Murray the Magician",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T00:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T00:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC956997",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/39005299C5C89A50?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2068753?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/467880?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "39005299C5C89A50",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Sin City at Planet Hollywood Resort & Casino",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.109599551",
+            "longitude" : "-115.171977058"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3667 Las Vegas Blvd S",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467880?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467880",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "More Arts and Theater",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "53",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Murray-the-Magician-tickets/artist/2068753",
+          "image" : {
+            "url" : "/dbimages/210012a.jpg"
+          },
+          "name" : "Murray the Magician",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2068753?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2068753",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Menopause The Musical",
+      "locale" : "en-us",
+      "promoterId" : [ 494, 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T00:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T00:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "16:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC815637",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/39005162CDC35504?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/207?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/874566?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/467916?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "39005162CDC35504",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Harrah's Cabaret at Harrah's Las Vegas",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.118379000",
+            "longitude" : "-115.172620000"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3475 Las Vegas Blvd S",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467916?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467916",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "Musicals",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/207?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "207",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Menopause-The-Musical-tickets/artist/874566",
+          "image" : {
+            "url" : "/dam/a/40d/e3d2bfed-c5de-4c97-9485-0b898829f40d_530401_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Menopause The Musical",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/874566?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "874566",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Mapy",
+      "locale" : "en-us",
+      "eventUrl" : "https://www.ticketweb.com/event/mapy-highline-ballroom-tickets/7560435?REFERRAL_ID=tmfeed",
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T00:30:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "19:30:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T00:30:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "19:30:00"
+        },
+        "timezone" : "America/New_York",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1015088",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/290052EA29AF5E77?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/52?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2391972?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/337649?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "290052EA29AF5E77",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Highline Ballroom",
+          "marketId" : [ 124, 35, 55 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NY"
+          },
+          "city" : {
+            "name" : "New York"
+          },
+          "location" : {
+            "latitude" : "40.743068695",
+            "longitude" : "-74.005714417"
+          },
+          "postalCode" : "10011",
+          "address" : {
+            "line1" : "431 W. 16th Street",
+            "line2" : "New York, NY"
+          },
+          "timeZone" : "America/New_York",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/337649?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "337649",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Music",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10001",
+          "type" : "category"
+        }, {
+          "name" : "More Concerts",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/52?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "52",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Mapy-tickets/artist/2391972",
+          "name" : "Mapy",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2391972?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2391972",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Emanuel Casablanca, Harry Teardrop, Vera Loe, Frisk",
+      "locale" : "en-us",
+      "eventUrl" : "https://www.ticketweb.com/event/emanuel-casablanca-harry-teardrop-vera-knitting-factory--brooklyn-tickets/7867805?REFERRAL_ID=tmfeed",
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T01:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "20:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T01:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "20:00:00"
+        },
+        "timezone" : "America/New_York",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1129939",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/290053701DF53138?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/52?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2439131?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/336184?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "290053701DF53138",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Knitting Factory",
+          "marketId" : [ 35 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NY"
+          },
+          "city" : {
+            "name" : "Brooklyn"
+          },
+          "location" : {
+            "latitude" : "40.714155640",
+            "longitude" : "-73.955568820"
+          },
+          "postalCode" : "11211",
+          "address" : {
+            "line1" : "361 Metropolitan Avenue",
+            "line2" : "Brooklyn, NY"
+          },
+          "timeZone" : "America/New_York",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/336184?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "336184",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Music",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10001",
+          "type" : "category"
+        }, {
+          "name" : "More Concerts",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/52?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "52",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Emanuel-Casablanca-Harry-Teardrop-Vera-Loe-tickets/artist/2439131",
+          "name" : "Emanuel Casablanca, Harry Teardrop, Vera Loe, Frisk",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2439131?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2439131",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "The Auto Collections at the Linq",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T01:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "17:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T01:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "17:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC858851",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/3900519EEB4D7B03?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2333411?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/467902?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "3900519EEB4D7B03",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "The LINQ",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.117574000",
+            "longitude" : "-115.172724000"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3545 Las Vegas BLVD. S.",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467902?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467902",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "Museums and Exhibits",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "14",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/The-Auto-Collections-at-the-Linq-tickets/artist/2333411",
+          "name" : "The Auto Collections at the Linq",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2333411?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2333411",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "JAY-Z - Upgrade VIP Packages",
+      "locale" : "en-us",
+      "eventUrl" : "http://livemu.sc/JAY-Z-Brooklyn1127",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T01:01:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "20:01:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T01:01:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "20:01:00"
+        },
+        "timezone" : "America/New_York",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/0000535ED8894ADB?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/3?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/781009?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/1288?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "0000535ED8894ADB",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Barclays Center",
+          "marketId" : [ 35, 55 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NY"
+          },
+          "city" : {
+            "name" : "Brooklyn"
+          },
+          "location" : {
+            "latitude" : "40.683504172",
+            "longitude" : "-73.976616586"
+          },
+          "postalCode" : "11217",
+          "address" : {
+            "line1" : "620 Atlantic Ave, (at the corner of Atlantic Ave and Flatbush Ave)",
+            "line2" : "Brooklyn, NY"
+          },
+          "timeZone" : "America/New_York",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/1288?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1288",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Music",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10001",
+          "type" : "category"
+        }, {
+          "name" : "Rap and Hip-Hop",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/3?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "3",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/JAYZ-tickets/artist/781009",
+          "image" : {
+            "url" : "/dam/a/9e0/e18f7479-9452-4e29-9eda-1238d464b9e0_548421_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "JAY-Z",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/781009?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "781009",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Solid Gold Soul",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T01:30:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "17:30:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T01:30:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "17:30:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1031141",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/39005301D4732CDB?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2279528?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/467871?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "39005301D4732CDB",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Windows at Bally's Las Vegas",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.113764516",
+            "longitude" : "-115.168899059"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3655 Las Vegas Blvd. South",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467871?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467871",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "More Arts and Theater",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "53",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Solid-Gold-Soul-tickets/artist/2279528",
+          "image" : {
+            "url" : "/dam/a/328/91e38be2-0de1-4d20-9c7a-a345f0a6b328_304421_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Solid Gold Soul",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2279528?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2279528",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Gordie Brown Live",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T01:30:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "17:30:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T01:30:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "17:30:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "canceled"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC992774",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/390052C9C83C162C?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/1932288?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/467880?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "390052C9C83C162C",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Sin City at Planet Hollywood Resort & Casino",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.109599551",
+            "longitude" : "-115.171977058"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3667 Las Vegas Blvd S",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467880?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467880",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "More Arts and Theater",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "53",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Gordie-Brown-tickets/artist/1932288",
+          "image" : {
+            "url" : "/dbimages/170610a.jpg"
+          },
+          "name" : "Gordie Brown",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/1932288?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1932288",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Wine Down Mondays @ Copper Blues",
+      "locale" : "en-us",
+      "eventUrl" : "https://www.ticketweb.com/event/wine-down-mondays-copper-copper-blues-oxnard-resturant-tickets/7120365?REFERRAL_ID=tmfeed",
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC858107",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/2900519C29B14E92?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/52?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2321374?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/340804?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "2900519C29B14E92",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Copper Blues Oxnard Resturant",
+          "marketId" : [ 27 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "CA"
+          },
+          "city" : {
+            "name" : "Oxnard"
+          },
+          "location" : {
+            "latitude" : "34.240229000",
+            "longitude" : "-119.176274000"
+          },
+          "postalCode" : "93036",
+          "address" : {
+            "line1" : "581 Collections Blvd",
+            "line2" : "Oxnard, CA"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/340804?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "340804",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Music",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10001",
+          "type" : "category"
+        }, {
+          "name" : "More Concerts",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/52?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "52",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Wine-Down-Mondays-Copper-Blues-tickets/artist/2321374",
+          "name" : "Wine Down Mondays @ Copper Blues",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2321374?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2321374",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Unsung Genius: Trivia & Karaoke At the Merrow",
+      "locale" : "en-us",
+      "eventUrl" : "https://www.ticketweb.com/event/unsung-genius-trivia-karaoke-the-merrow-tickets/7771835?REFERRAL_ID=tmfeed",
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1097881",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/2900534C19CD4038?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10004?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/206?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2201143?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/338515?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "2900534C19CD4038",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "The Merrow",
+          "marketId" : [ 20 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "CA"
+          },
+          "city" : {
+            "name" : "San Diego"
+          },
+          "location" : {
+            "latitude" : "32.748121489",
+            "longitude" : "-117.151783258"
+          },
+          "postalCode" : "92103",
+          "address" : {
+            "line1" : "1271 University Avenue",
+            "line2" : "San Diego, CA"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/338515?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "338515",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Sports",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10004?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10004",
+          "type" : "category"
+        }, {
+          "name" : "Competitions",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/206?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "206",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Unsung-Genius-Trivia-Karaoke-At-tickets/artist/2201143",
+          "name" : "Unsung Genius: Trivia & Karaoke At the Merrow",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2201143?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2201143",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Samurai: Armor from the Ann and Gabriel Barbier-Muller Collection",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1088029",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/2E005343C17410D4?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2421799?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/376849?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "2E005343C17410D4",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Bellagio Las Vegas",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.112026000",
+            "longitude" : "-115.176938000"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3600 Las Vegas Blvd South",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/376849?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "376849",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "Museums and Exhibits",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/14?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "14",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Samurai-Armor-from-the-Ann-and-tickets/artist/2421799",
+          "name" : "Samurai: Armor from the Ann and Gabriel Barbier-Muller Collection",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2421799?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2421799",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Solid Gold Soul",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1058279",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/3900531EEA304217?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/2279528?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/467871?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "3900531EEA304217",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Windows at Bally's Las Vegas",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.113764516",
+            "longitude" : "-115.168899059"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3655 Las Vegas Blvd. South",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/467871?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "467871",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Arts & Theater",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10002?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10002",
+          "type" : "category"
+        }, {
+          "name" : "More Arts and Theater",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/53?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "53",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Solid-Gold-Soul-tickets/artist/2279528",
+          "image" : {
+            "url" : "/dam/a/328/91e38be2-0de1-4d20-9c7a-a345f0a6b328_304421_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Solid Gold Soul",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/2279528?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "2279528",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Trivium & Arch Enemy",
+      "locale" : "en-us",
+      "eventUrl" : "https://www.eventbrite.com/e/trivium-arch-enemy-ace-of-spades-tickets-36673713063",
+      "promoterId" : [ 653 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1055888",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/1C005301C9EE9841?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/1?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : [ {
+          "href" : "/discovery/v1/attractions/962593?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/attractions/848439?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/attractions/1609117?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/attractions/1613698?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "venue" : {
+          "href" : "/discovery/v1/venues/229953?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "1C005301C9EE9841",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Ace of Spades",
+          "marketId" : [ 41 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "CA"
+          },
+          "city" : {
+            "name" : "Sacramento"
+          },
+          "location" : {
+            "latitude" : "38.569992999",
+            "longitude" : "-121.490879282"
+          },
+          "postalCode" : "95811",
+          "address" : {
+            "line1" : "1417 R St.",
+            "line2" : "Sacramento, CA"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/229953?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "229953",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Music",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10001",
+          "type" : "category"
+        }, {
+          "name" : "Rock and Pop",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/1?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Trivium-tickets/artist/962593",
+          "image" : {
+            "url" : "/dam/a/595/b7a13d50-a499-4e50-9aa9-8eb118eaa595_557521_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Trivium",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/962593?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "962593",
+          "type" : "attraction"
+        }, {
+          "url" : "/Arch-Enemy-tickets/artist/848439",
+          "image" : {
+            "url" : "/dam/a/a1d/d7cf89d2-a003-4f3d-bd47-39f2dbc9ba1d_480391_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Arch Enemy",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/848439?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "848439",
+          "type" : "attraction"
+        }, {
+          "url" : "/While-She-Sleeps-tickets/artist/1609117",
+          "name" : "While She Sleeps",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/1609117?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1609117",
+          "type" : "attraction"
+        }, {
+          "url" : "/Fit-for-an-Autopsy-tickets/artist/1613698",
+          "name" : "Fit for an Autopsy",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/1613698?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1613698",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Tournament of Kings",
+      "locale" : "en-us",
+      "promoterId" : [ 494 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "18:00:00"
+        },
+        "timezone" : "America/Los_Angeles",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1039895",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/2E00530B880B2351?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10003?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/55?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : {
+          "href" : "/discovery/v1/attractions/1075021?locale=en-us&domain=ticketmaster.com"
+        },
+        "venue" : {
+          "href" : "/discovery/v1/venues/376853?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "2E00530B880B2351",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Excalibur Hotel and Casino",
+          "marketId" : [ 14 ],
+          "country" : {
+            "countryCode" : "US"
+          },
+          "state" : {
+            "stateCode" : "NV"
+          },
+          "city" : {
+            "name" : "Las Vegas"
+          },
+          "location" : {
+            "latitude" : "36.098881000",
+            "longitude" : "-115.176586000"
+          },
+          "postalCode" : "89109",
+          "address" : {
+            "line1" : "3850 Las Vegas Blvd South",
+            "line2" : "Las Vegas, NV"
+          },
+          "timeZone" : "America/Los_Angeles",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/376853?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "376853",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Family",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10003?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10003",
+          "type" : "category"
+        }, {
+          "name" : "More Family",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/55?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "55",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Tournament-of-Kings-tickets/artist/1075021",
+          "image" : {
+            "url" : "/dam/a/219/89cd4b14-faff-4d52-8bdb-8b5ae4857219_108011_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Tournament of Kings",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/1075021?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1075021",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    }, {
+      "name" : "Death From Above",
+      "locale" : "en-us",
+      "promoterId" : [ 850 ],
+      "dates" : {
+        "start" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "20:00:00"
+        },
+        "end" : {
+          "dateTime" : "2017-11-28T02:00:00.000+0000",
+          "localDate" : "2017-11-27",
+          "localTime" : "20:00:00"
+        },
+        "timezone" : "America/Chicago",
+        "displayOptions" : {
+          "range" : {
+            "localStartDate" : "2017-11-27",
+            "localEndDate" : "2017-11-27"
+          }
+        },
+        "status" : {
+          "code" : "active"
+        }
+      },
+      "test" : false,
+      "groupId" : "BC1038448",
+      "_links" : {
+        "self" : {
+          "href" : "/discovery/v1/events/11005309E2818689?locale=en-us&domain=ticketmaster.com"
+        },
+        "categories" : [ {
+          "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/categories/1?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "attractions" : [ {
+          "href" : "/discovery/v1/attractions/949908?locale=en-us&domain=ticketmaster.com"
+        }, {
+          "href" : "/discovery/v1/attractions/1939839?locale=en-us&domain=ticketmaster.com"
+        } ],
+        "venue" : {
+          "href" : "/discovery/v1/venues/139404?locale=en-us&domain=ticketmaster.com"
+        }
+      },
+      "id" : "11005309E2818689",
+      "_embedded" : {
+        "venue" : [ {
+          "name" : "Burton Cummings Theatre",
+          "marketId" : [ 106 ],
+          "country" : {
+            "countryCode" : "CA"
+          },
+          "state" : {
+            "stateCode" : "MB"
+          },
+          "city" : {
+            "name" : "Winnipeg"
+          },
+          "location" : {
+            "latitude" : "49.895822600",
+            "longitude" : "-97.143639000"
+          },
+          "postalCode" : "R3B 2H2",
+          "address" : {
+            "line1" : "364 Smith St.",
+            "line2" : "Winnipeg, MB"
+          },
+          "timeZone" : "America/Chicago",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/venues/139404?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "139404",
+          "type" : "venue"
+        } ],
+        "categories" : [ {
+          "name" : "Music",
+          "level" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/10001?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "10001",
+          "type" : "category"
+        }, {
+          "name" : "Rock and Pop",
+          "level" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/categories/1?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1",
+          "type" : "category"
+        } ],
+        "attractions" : [ {
+          "url" : "/Death-From-Above-tickets/artist/949908",
+          "image" : {
+            "url" : "/dam/a/ab6/e02ffbe1-8564-48ae-9f0a-10e6868a2ab6_484361_EVENT_DETAIL_PAGE_16_9.jpg"
+          },
+          "name" : "Death From Above",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/949908?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "949908",
+          "type" : "attraction"
+        }, {
+          "url" : "/The-Beaches-tickets/artist/1939839",
+          "name" : "The Beaches",
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/attractions/1939839?locale=en-us&domain=ticketmaster.com"
+            }
+          },
+          "id" : "1939839",
+          "type" : "attraction"
+        } ]
+      },
+      "type" : "event"
+    } ]
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 79270,
+    "totalPages" : 3964,
+    "number" : 0
+  }
+}
