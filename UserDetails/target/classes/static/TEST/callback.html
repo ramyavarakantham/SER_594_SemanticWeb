@@ -11,7 +11,7 @@
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <!-- custom css file -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="events.css">
     <!-- ng-table -->
     <script type="text/javascript" src="lib/ng-table/ng-table.min.js"></script>
     <link rel="stylesheet" type="text/css" href="lib/ng-table/ng-table.min.css">
@@ -20,7 +20,252 @@
 <body ng-app="myApp1" ng-controller="myCtrl1">
 
 <div class="container">
-	
+    <h2><b>Personalized list of upcoming events</b></h2>
+
+    <div class="panel-group" id="accordion">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                        <div class="row">
+                            <div class="col-sm-4"><b>John Waite Storyteller</b></div>
+                            <div class="col-sm-4">Friday, Jan 19 2018, 7:45 PM</div>
+                            <div class="col-sm-4">BLK Live, Scottsdale, AZ</div>
+                        </div>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#EventInfo">Details</a></li>
+                        <li><a data-toggle="tab" href="#googlemaps">Google Maps</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="EventInfo" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <br/> <b>Event Info</b> <br/>
+                                    John Waite Storyteller show is an intimate scaled down acoustic experience where the
+                                    fans will hear the story's behind the songs.
+
+                                    VIP Tickets includes entry and private meet & greet, signed lyric sheet to "Missing
+                                    You" which includes thumb print, photo opportunity and signing of merchandise with
+                                    Artist. LIMIT 10.
+
+                                    For Your Ultimate BLK Live VIP Concert Experience ~ Contact Lara Ruzich 602.558.0256
+                                    for Cabana, Table or Day Bed Rentals with Bottle Service, Food and Beverage or Beer
+                                    Buckets<br/>
+                                    <br/>
+                                    <b>Artist</b> <br/> John Waite
+                                </div>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-2">
+                                    <br/>
+                                    <a type="button" class="btn btn-info "
+                                       href='https://www.ticketweb.com/event/john-waite-storyteller-blk-live-tickets/7713645?REFERRAL_ID=tmfeed&crosssite=TM_US:736408:341235&_ga=2.182256544.640976736.1511667063-1853716914.1503864810'>Find
+                                        Tickets</a><br/><br/>
+                                    <button type="button" class="btn btn-info " onclick="">Find Venue</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="googlemaps" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                <h4><b> Modes of Transport</b></h4>
+                                <h5> Driving </h5>
+                                <h5> Bicycling </h5>
+                                <h5> Walking </h5>
+                                <h5> Transit </h5>
+                                </div>
+
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-4">
+                                <br/><a type="button" class="btn btn-info pull-right" href='maps_html.html'>See on Maps</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        <div class="row">
+                            <div class="col-sm-4"><b>Katy Perry: Witness The Tour</b></div>
+                            <div class="col-sm-4">Friday, Jan 19 2018, 7:30 PM</div>
+                            <div class="col-sm-4">Gila River Arena, Glendale, AZ</div>
+                        </div>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <b>Event Info</b> <br/>
+                            There is a 4 ticket limit for the Verified Fan Presale and early VIP packages. There is a 6
+                            ticket limit for the VIP Packages. There is an 8 ticket limit for the public onsale.<br/>
+                            <br/><b>Artist</b> <br/> Katy Perry
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2">
+                            <a type="button" class="btn btn-info"
+                               href="https://www1.ticketmaster.com/katy-perry-witness-the-tour-glendale-arizona-01-19-2018/event/190052ACA02B1927?artistid=1265325&majorcatid=10001&minorcatid=1">Find
+                                Tickets</a><br/><br/>
+                            <button type="button" class="btn btn-info " onclick="">Find Venue</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        <div class="row">
+                            <div class="col-sm-4"><b>Morris Day and The Time</b></div>
+                            <div class="col-sm-4">Saturday, Jan 20 2018, 7:30 PM</div>
+                            <div class="col-sm-4">BLK Live, Scottsdale, AZ</div>
+                        </div>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <b>Event Info</b> <br/>
+                            With his dynamic dancing and smooth yet gutsy vocals, Morris Day played an essential role in
+                            the development of the Minneapolis dance club sound of the 1980's and is a founding member
+                            of Prince’s band called The Time. Day remained with the group from 1981-1984 until he
+                            launched his solo career. Returning again in 1988, he also performed and recorded with the
+                            Time from 1990-1991. In 1995 several members of the group reunited and continued to tour
+                            with Prince up to time of his untimely death. Morris Day & The Time play tribute to Prince
+                            as well as all the Morris Day hits that have been produced over many decades.
+
+                            Day’s songwriting skills were first recognized by Prince when he recorded Day’s “Party Up.”
+                            Day’s solo hits include: “Fishnet,” “The Oak Tree,” “Color Of Success,” “The Character,”
+                            “Daydreaming” and more. He has also appeared in numerous films and television programs.<br/>
+                            <br/><b>Artist</b> <br/> Morris
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2">
+                            <a type="button" class="btn btn-info "
+                               href="https://www.ticketweb.com/event/morris-day-and-the-time-blk-live-tickets/7850005?REFERRAL_ID=tmfeed&crosssite=TM_US:846952:341235">Find
+                                Tickets</a><br/><br/>
+                            <button type="button" class="btn btn-info " onclick="">Find Venue</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                        <div class="row">
+                            <div class="col-sm-4"><b>Nicole Pesce Celebrates Dave Brubeck</b></div>
+                            <div class="col-sm-4">Wednesday, Feb 7 2018, 7:30 PM</div>
+                            <div class="col-sm-4">ASU Kerr Cultural Center, Scottsdale, AZ</div>
+                        </div>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <b>Event Info</b> <br/>
+                            The Dave Brubeck show features phenomenal pianist Nicole Pesce and saxophonist Jerry Donato,
+                            paying homage to Paul Desmond. Virtuoso talent Pesce and her highly-regarded bandmates will
+                            explore favorites of Brubecks music, such as Take Five, which has been in regular rotation
+                            on mainstream and contemporary jazz radio stations for five decades.<br/>
+                            <br/><b>Artist</b> <br/> Nicole Pesce
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2">
+                            <a type="button" class="btn btn-info "
+                               href="https://www1.ticketmaster.com/nicole-pesce-celebrates-dave-brubeck-scottsdale-arizona-02-07-2018/event/19005309C46232CC?artistid=1642339&majorcatid=10001&minorcatid=1#efeat4212">Find
+                                Tickets</a><br/><br/>
+                            <button type="button" class="btn btn-info " onclick="">Find Venue</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                        <div class="row">
+                            <div class="col-sm-4"><b>The Sweet, Rogue Society</b></div>
+                            <div class="col-sm-4">Sunday, Jan 28 2018, 7:00 PM</div>
+                            <div class="col-sm-4">BLK Live, Scottsdale, AZ</div>
+                        </div>
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse5" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <b>Event Info</b> <br/>
+                            Legendary rock band The Sweet shot to the top of the charts in the 1970s with such hits as
+                            Ballroom Blitz, Fox on the Run,Love is Like Oxygen, Little Willy, Hellraiser, Teenage
+                            Rampage, Blockbuster and Action.
+
+                            Formed in the U.K. in 1968, the original lineup featured vocalist Brian Connolly,
+                            bassist/vocalist Steve Priest, drummer Mick Tucker and guitarist Frank Torpey (later
+                            replaced by Mick Stewart and, subsequently, by Andy Scott). In 1973, the band produced their
+                            first number one hit, Blockbuster, which went on to achieve platinum status. Sweet toured
+                            extensively and continued to chart with Chinn and Chapman compositions.<br/>
+                            <br/><b>Artist</b> <br/> The Sweet
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2">
+                            <a type="button" class="btn btn-info "
+                               href="https://www.ticketweb.com/event/the-sweet-rogue-society-blk-live-tickets/7775485?REFERRAL_ID=tmfeed&crosssite=TM_US:1282070:341235">Find
+                                Tickets</a><br/><br/>
+                            <button type="button" class="btn btn-info " onclick="">Find Venue</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" align="bottom">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ul class="pagination">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+
+
 </div>
     
 </body>
@@ -123,18 +368,27 @@
                 console.log(response); //response should hold event details array
                 
                 //for every event location, construct this url for every mode of transport
-  /*               var modes=["driving", "walking", "transit", "bicycling"];
-                for(int i=0;i<modes.length;i++){
-                	var url_maps=
-                } */
-                //var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                //var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=walking&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                //var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=bicycling&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+  	            var modes=["driving", "walking", "transit", "bicycling"];
+                for(var i=0;i<modes.length;i++){
+                	var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY";
+                	if(modes[i]=="transit")
+                		url_maps+="&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+                	else
+                		url_maps+="&mode="+modes[i]+"&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+                    $http.get(url_maps).then(function(response1){ //response1 holds json data for this request
+                    	console.log(response1.data.destination_addresses);
+                    });	
+                } 
+                
+               
+                /*
+                
+               //Individual API calls
+                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=walking&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=bicycling&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
                 var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=driving&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                $http.get(url_maps).then(function(response1){ //response1 holds json data for this request
-                	
-                	alert(response1.data.destination_addresses);
-                });
+				*/
                 
             },
             function(error) {
