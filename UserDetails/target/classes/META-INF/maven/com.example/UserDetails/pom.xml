@@ -27,6 +27,17 @@
 		  <version>1.5.0</version>
 	</dependency>
 	<dependency>
+	    <groupId>org.json</groupId>
+	    <artifactId>json</artifactId>
+	    <version>20090211</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.jena</groupId>
+	    <artifactId>jena-arq</artifactId>
+	    <version>3.5.0</version>
+	</dependency>
+	
+	<dependency>
 	    <groupId>com.google.maps</groupId>
 	    <artifactId>google-maps-services</artifactId>
 	    <version>0.2.5</version>

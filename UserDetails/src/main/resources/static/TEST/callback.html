@@ -23,7 +23,7 @@
 <div class="container">
     <h2><b>Personalized list of upcoming events</b></h2>
 	<h3><b>Select Radius within which you want to search for events(miles)</b>
-	<select class="dropdown">
+	<select class="dropdown" ng-model="Radius" ng-change="GetValue()">
 		<option value="100">100</option>
 		<option value="200">200</option>
 		<option value="300">300</option>
@@ -280,44 +280,32 @@
 </body>
 
 <script>
-
+	//initializing the application
 	var app =  angular.module('myApp1', []);
-	
 	app.controller('myCtrl1', function($scope, $http){
-	
-	
+		//Api Call to get access token
 		 var req = {
             method: 'GET',
             url: 'http://localhost:8080/details'
         }
-		
-		
 		global_token = "test";
-		 
-		 names = [];
-		
-
+		 names = []; //stores artists lists
+		//response of access token api call
         $http(req).then(function(response) {
-		
-              
-			
-				return response.data.value;
-			
-                
+  				return response.data.value;  
             },
             function(error) {
                 alert(error.data.message);
-            }).then(function(token){
-			
-			console.log("In Second");
+            }).then(function(token){ //token has access token value
+            //With the help of access token, make an api call to spotify web api to get first 50 followed artists
 			var req_followed = {
-            method: 'GET',
-            url: 'https://api.spotify.com/v1/me/following?type=artist&limit=50',
-			headers: {
-				"Authorization": "Bearer "+token
-			}
-        }
-			
+	            method: 'GET',
+	            url: 'https://api.spotify.com/v1/me/following?type=artist&limit=50',
+				headers: {
+					"Authorization": "Bearer "+token
+				}
+        	} //request ends here
+			//Spotify api call to retrieve next set of followed artists
 			var x="4AVFqumd2ogHFlRbKIjp1t";
 			var url_gen="https://api.spotify.com/v1/me/following?limit=50&after="+x+"&type=artist";
 			var req_followed_after = {
@@ -326,70 +314,82 @@
 					headers: {
 						"Authorization": "Bearer "+token
 					}
-		        } 
-		
-		
+		        } //req ends here
+		//response of first 50 artists is held here
 		 $http(req_followed).then(function(response) {
-               return response;
-				
-                
+               return response;    
             },
             function(error) {
                 console.log(error);
-            }).then(sendData);;
-            
+            }).then(sendData);; //response for first 50 ends here
+          //response of next 50 artists is held here
 			$http(req_followed_after).then(function(response) {
 	               return response;
 	            },
 	            function(error) {
 	                console.log(error);
-	            }).then(sendData);;
-			
-			
-			})
+	            }).then(sendData);; //response for next 50 ends here
+			})//response for access token ends here
 		
 		
-	
+	//function to hold followed artists spoitfy web api response
 	function sendData(response)
-	{
+	{	
+		//artists data-json parsing
+		artists = response.data.artists.items;
+		//push artists name to names list	
+		for (var i = 0; i < artists.length; i++) {
+			names.push(artists[i].name);
+		}
+		//total-97 followed artists, after second call
+		console.log(names.length);
 		
+		//code to hold user input radius
+		var radius="";
+		$scope.GetValue = function(){
+		console.log($scope.Radius);
+		radius=$scope.Radius;
+		}
 
-			artists = response.data.artists.items;
-			
-			for (var i = 0; i < artists.length; i++) {
-				names.push(artists[i].name);
-		
-				}
-				console.log(names.length);
+				//user's current location is found here
 				if (navigator.geolocation) {
-					navigator.geolocation.getCurrentPosition(showPosition);
+					navigator.geolocation.getCurrentPosition(showPosition);//function showPosition is called
 				} else {
 					x.innerHTML = "Geolocation is not supported by this browser.";
 				}
 				
-				
-				function showPosition(position) {
+				//user's lat and long is held here
+		function showPosition(position) {
 				latitude = position.coords.latitude
 				longitude = position.coords.longitude; 
-				
-				$http.post("http://localhost:8080/lat/"+latitude+"/lon/"+longitude, JSON.stringify(names)).then(function(response){
-	
-                console.log(response); //response should hold event details array
+				//api post call is made to send user's location, user input radius and aritst list
+				$http.post("http://localhost:8080/lat/"+latitude+"/lon/"+longitude+"/rad/"+radius, JSON.stringify(names)).then(function(response){
+                console.log(response); //response should hold event details as json 
+                /*  
                 
+                Parse the json data here and make api calls to google maps api to find distance and time for different modes of transport
+                
+                */
                 //for every event location, construct this url for every mode of transport
   	            var modes=["driving", "walking", "transit", "bicycling"];
+         		/* 
+         		
+         		Include code to make origins and destinations dynamic i.e. from the response, get event location, lat and long 
+         		
+         		
+         		*/
+                //api calls to google maps distance matrix api for different modes of transport
                 for(var i=0;i<modes.length;i++){
-                	var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY";
+                	var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=33.4484,%20-112.0740&destinations=33.424564,%20-111.928001";
                 	if(modes[i]=="transit")
                 		url_maps+="&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
                 	else
                 		url_maps+="&mode="+modes[i]+"&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+                	//response from google maps api is held here
                     $http.get(url_maps).then(function(response1){ //response1 holds json data for this request
                     	console.log(response1.data.destination_addresses);
-                    });	
-                } 
-                
-               
+                    });	//response-google maps api ends here
+                } //for loop ends here
                 /*
                 
                //Individual API calls
@@ -397,17 +397,13 @@
                 var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=walking&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
                 var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=bicycling&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
                 var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=driving&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-				*/
-                
+				*/ 
             },
             function(error) {
                 alert(error.data.message);
-            });
-					
-		
-		}
-	}	
-		
-	});
+            });//api call to lat, long-endpoint-test.java ends here
+		}//showposition function call ends here
+	}//send data function call ends here	
+	});//myCtrl controller ends here
 
 </script>

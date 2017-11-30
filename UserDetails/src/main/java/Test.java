@@ -24,7 +24,22 @@ import com.google.maps.DistanceMatrixApiRequest;
 import com.google.maps.GeoApiContext;
 import com.wrapper.spotify.Api;
 import com.wrapper.spotify.models.AuthorizationCodeCredentials;
+import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import org.json.*;
 
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
+import org.apache.jena.sparql.resultset.ResultsFormat;
 /*
  *  var client_id = '462eee0168014d178e3c9303d0b67ede'; // Your client id
 var client_secret = '0b1daa19dd724200a09241e093273a7c'; // Your secret
@@ -143,34 +158,66 @@ public class Test{
     
     /*** This is  where the final answer is***/
     
-    @RequestMapping(value = "/lat/{latitude}/lon/{longitude}", method=RequestMethod.POST, produces="application/json")
-    ResponseEntity<Object> getFinalResult(@PathVariable String latitude, @PathVariable String longitude, 
+    @RequestMapping(value = "/lat/{latitude}/lon/{longitude}/rad/{radius}", method=RequestMethod.POST, produces="application/json")
+    ResponseEntity<Object> getFinalResult(@PathVariable String latitude, @PathVariable String longitude, @PathVariable String radius, 
     		@RequestBody List<String> artists ) throws Exception {
     	
     	System.out.println(latitude+" "+longitude+" "+artists.get(0));//here you have user's location and artist names
     	
     	/*
-    	 * Include fuseki code to get event details based on artist. Push event details into array and send it to front-end
+    	 * Include fuseki code to get event details based on artist. Push event details into json object and send it to front-end
     	 */
     	
-    	
-    	    /*minLatitude*/  double minLatitude=Double.parseDouble(latitude) - (10*2)/60.0;
-    	    /*maxLatitude*/double maxLatitude=Double.parseDouble(latitude)+ (10*2)/60.0;
-    	    /*minLongitude*/ double minLongitude=(Double.parseDouble(longitude)*2)/60.0 *(Math.cos(minLatitude));
-    	    /*maxLongitude*/ double maxLongitude= (Double.parseDouble(longitude)*2)/60.0 *(Math.cos(maxLatitude));
-    	
-    	
-    	
-    	
-    	Response r =  new Response();
-    	r.setValue(accessToken);//send event array
-    	
-    	HttpHeaders res = new HttpHeaders();
-    	
-    	return new ResponseEntity<Object>(r , res, HttpStatus.OK);
-    	
-    	
-        
+    	//This is the Fuseki code
+    	double rad=Double.parseDouble(radius);
+    	 String serviceEndPoint = "http://localhost:3030/eventsds/query";
+    	 String al = "";
+    	 int i=0;
+    	 for(i=0; i<artists.size()-1;i++)
+	 		{
+	 			al = al+" ?eventArtist = \""+artists.get(i)+"\" || ";
+	 			
+	 		}
+ 		al = al+" ?eventArtist = \""+artists.get(i)+"\" ";
+ 		System.out.println("Atrist List : "+al+" ");
+    	    /*minLatitude*/  String LowLat=String.valueOf(Double.parseDouble(latitude) - (rad*2)/60.0);
+    	    /*maxLatitude*/String HighLat=String.valueOf(Double.parseDouble(latitude)+ (rad*2)/60.0);
+    	    /*minLongitude*/ String LowLong=String.valueOf((Double.parseDouble(longitude)*2)/60.0 *(Math.cos(Double.parseDouble(LowLat))));
+    	    /*maxLongitude*/ String HighLong= String.valueOf((Double.parseDouble(longitude)*2)/60.0 *(Math.cos(Double.parseDouble(HighLat))));
+
+    	    String query="prefix events:<http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#> "
+        	   		+ "select distinct ?EventName ?eventurl ?address ?eventArtist ?datetime ?lat ?long ?city ?state ?country ?postalcode"
+           		+ "where { "
+           		+ "OPTIONAL {?Event events:name ?EventName .} "
+           		+ "OPTIONAL {?Event events:eventurl ?eventurl .} "
+           		+ "OPTIONAL {?Event events:address ?address .} "
+           		+ "?Event events:eventArtist ?eventArtist . "
+           		+ "OPTIONAL {?Event events:Date ?datetime .} "
+           		+ "?Event events:eventArtist ?eventArtist . "
+           		+ "?Event events:Latitude ?lat . "
+           		+ "?Event events:Longitude ?long . "
+           		+ "OPTIONAL {?Event events:city ?city .}"
+           		+ "OPTIONAL {?Event events:state ?state . }"
+           		+ "OPTIONAL {?Event events:country ?country . }"
+           		+ "OPTIONAL {?Event events:postalcode ?postalcode . }"
+           		+ "?Event events:imageURL ?imageurl ."
+           		+ "?Event events:venueUrl ?venueurl " 
+           		+ "filter (" + al+") . filter (?lat > \""+LowLat+"\" && ?lat < \""+HighLat+"\" ) . "
+           				+ "filter (?long > \""+LowLong+"\" && ?long < \""+HighLong+"\" ) ."+" }";
+           		
+    		System.out.println(query);
+    		QueryExecution q = QueryExecutionFactory.sparqlService(serviceEndPoint, query );
+    		ResultSet results = q.execSelect();
+    		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+    		ResultSetFormatter.outputAsJSON(outputStream, results);
+    		String json = new String(outputStream.toByteArray());
+    		org.json.JSONObject jsonObj = new JSONObject(json);
+    		System.out.println(jsonObj); //Fuseki code ends here
+   /* 	    	Response r =  new Response();
+    	    	r.setValue(accessToken);//send event array
+*/        	
+    	    HttpHeaders res = new HttpHeaders();
+    		return new ResponseEntity<Object>(jsonObj , res, HttpStatus.OK);//sending events json object as response to front-end
     }
     
     public static void main(String[] args) throws Exception {
