@@ -156,14 +156,13 @@ public class Test{
     
     
     
-    /*** This is  where the final answer is***/
+    /*** This is  where the final answer is***/ 
     
     @RequestMapping(value = "/lat/{latitude}/lon/{longitude}/rad/{radius}", method=RequestMethod.POST, produces="application/json")
-    ResponseEntity<Object> getFinalResult(@PathVariable String latitude, @PathVariable String longitude, @PathVariable String radius, 
-    		@RequestBody List<String> artists ) throws Exception {
+    ResponseEntity<Object> getFromServer(@PathVariable String latitude, @PathVariable String longitude, @PathVariable String radius,
+    		@RequestBody List<String> artists) throws Exception {
     	
-    	System.out.println(latitude+" "+longitude+" "+artists.get(0));//here you have user's location and artist names
-    	
+
     	/*
     	 * Include fuseki code to get event details based on artist. Push event details into json object and send it to front-end
     	 */
@@ -213,12 +212,17 @@ public class Test{
     		String json = new String(outputStream.toByteArray());
     		org.json.JSONObject jsonObj = new JSONObject(json);
     		System.out.println(jsonObj); //Fuseki code ends here
-   /* 	    	Response r =  new Response();
-    	    	r.setValue(accessToken);//send event array
-*/        	
-    	    HttpHeaders res = new HttpHeaders();
-    		return new ResponseEntity<Object>(jsonObj , res, HttpStatus.OK);//sending events json object as response to front-end
+    	
+    	HttpHeaders res = new HttpHeaders();
+    	
+    	return new ResponseEntity<Object>(jsonObj , res, HttpStatus.OK);
+    	
+    	
+        
     }
+    
+    
+    
     
     public static void main(String[] args) throws Exception {
        SpringApplication.run(Test.class, args);

@@ -321,14 +321,21 @@
             },
             function(error) {
                 console.log(error);
-            }).then(sendData);; //response for first 50 ends here
+            }).then(function(r){
+					//artists data-json parsing
+				artists = r.data.artists.items;
+				//push artists name to names list	
+				for (var i = 0; i < artists.length; i++) {
+					names.push(artists[i].name);
+				}
+			}); //response for first 50 ends here
           //response of next 50 artists is held here
 			$http(req_followed_after).then(function(response) {
 	               return response;
 	            },
 	            function(error) {
 	                console.log(error);
-	            }).then(sendData);; //response for next 50 ends here
+	            }).then(sendData); //response for next 50 ends here
 			})//response for access token ends here
 		
 		
