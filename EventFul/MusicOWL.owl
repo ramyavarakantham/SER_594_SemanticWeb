@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Follows">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasArtist"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Some users follow tracks. Some users follows albums.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#belongsTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasAlbums -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasAlbums">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasArtist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasArtist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasArtist">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasArtist"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasArtist"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasArtist"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>All albums, all tracks have at least one artist,</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasEvent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasEvent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Some artists have some events</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasOwner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasPlaylist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasPlaylist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasPlaylist">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasPlaylist"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist"/>
+        <rdfs:comment>Some users may have playlists.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Some users may have saved tracks. All playlists, albums have at least one track.</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasTrack"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Inverse Functional</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasVenue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasVenue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasVenue"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#hasVenue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Albums and tracks have release dates. 
+Events have date of event</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>Event has event id
+Track has track id</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Latitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Longitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Password">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#SpotifyProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Popularity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Popularity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#PriceRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#PriceRange">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#SpotifyProfile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#SpotifyProfile">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#UserId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#UserId">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#SpotifyProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#country">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#eventArtist -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#eventArtist">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#eventStopTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#eventStopTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#eventurl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#eventurl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#imageURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#imageURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#postalcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#postalcode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#state -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#state">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#timezone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#timezone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#venueUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#venueUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Album">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Playlist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Track"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#User"/>
+    
+
+
+    <!-- http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Venue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#Location"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
