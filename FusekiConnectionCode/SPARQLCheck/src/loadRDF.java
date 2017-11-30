@@ -17,7 +17,7 @@ import org.apache.jena.sparql.resultset.ResultsFormat;
 
 public class loadRDF {
 
-static String serviceEndPoint = "http://localhost:3030/evenetds/query";
+static String serviceEndPoint = "http://localhost:3030/eventsds/query";
 	
 	
 	public static void main(String[] args) { 
@@ -48,6 +48,11 @@ static String serviceEndPoint = "http://localhost:3030/evenetds/query";
 		al = al+" ?eventArtist = \""+artists.get(i)+"\" ";
 		System.out.println("Atrist List : "+al+" ");
 		
+		String LowLat= "20.503364051";
+		String HighLat = "90.503364051";
+		String LowLong = "-0.0276250";
+		String HighLong="150.1276250";
+		
 		String query="prefix events:<http://www.semanticweb.org/meghana/ontologies/2017/9/untitled-ontology-21#> "
     	   		+ "select distinct ?EventName ?eventurl ?address ?eventArtist ?datetime ?lat ?long ?city ?state ?country ?postalcode"
        		+ "where { "
@@ -61,11 +66,12 @@ static String serviceEndPoint = "http://localhost:3030/evenetds/query";
        		+ "?Event events:Longitude ?long . "
        		+ "OPTIONAL {?Event events:city ?city .}"
        		+ "OPTIONAL {?Event events:state ?state . }"
-       		+ "OPTIONAL {?Event events:country ?long . }"
+       		+ "OPTIONAL {?Event events:country ?country . }"
        		+ "OPTIONAL {?Event events:postalcode ?postalcode . }"
-       		//+ "?Event events:imageURL ?imageurl ."
-       		//+ "?Event events:venueUrl ?venueurl " 
-       		+ "filter (" + al+")}";
+       		+ "?Event events:imageURL ?imageurl ."
+       		+ "?Event events:venueUrl ?venueurl " 
+       		+ "filter (" + al+") . filter (?lat > \""+LowLat+"\" && ?lat < \""+HighLat+"\" ) . "
+       				+ "filter (?long > \""+LowLong+"\" && ?long < \""+HighLong+"\" ) ."+" }";
        		
 		System.out.println(query);
 		QueryExecution q = QueryExecutionFactory.sparqlService(serviceURI, query );
