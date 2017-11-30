@@ -144,7 +144,7 @@ public class Test{
     /*** This is  where the final answer is***/
     
     @RequestMapping(value = "/lat/{latitude}/lon/{longitude}", method=RequestMethod.POST, produces="application/json")
-    ResponseEntity<Response> getFinalResult(@PathVariable String latitude, @PathVariable String longitude, 
+    ResponseEntity<Object> getFinalResult(@PathVariable String latitude, @PathVariable String longitude, 
     		@RequestBody List<String> artists ) throws Exception {
     	
     	System.out.println(latitude+" "+longitude+" "+artists.get(0));//here you have user's location and artist names
@@ -153,12 +153,21 @@ public class Test{
     	 * Include fuseki code to get event details based on artist. Push event details into array and send it to front-end
     	 */
     	
+    	
+    	    /*minLatitude*/  double minLatitude=Double.parseDouble(latitude) - (10*2)/60.0;
+    	    /*maxLatitude*/double maxLatitude=Double.parseDouble(latitude)+ (10*2)/60.0;
+    	    /*minLongitude*/ double minLongitude=(Double.parseDouble(longitude)*2)/60.0 *(Math.cos(minLatitude));
+    	    /*maxLongitude*/ double maxLongitude= (Double.parseDouble(longitude)*2)/60.0 *(Math.cos(maxLatitude));
+    	
+    	
+    	
+    	
     	Response r =  new Response();
     	r.setValue(accessToken);//send event array
     	
     	HttpHeaders res = new HttpHeaders();
     	
-    	return new ResponseEntity<Response>(r , res, HttpStatus.OK);
+    	return new ResponseEntity<Object>(r , res, HttpStatus.OK);
     	
     	
         
