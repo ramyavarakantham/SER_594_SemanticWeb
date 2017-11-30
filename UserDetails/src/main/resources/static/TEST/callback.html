@@ -12,6 +12,7 @@
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <!-- custom css file -->
     <link rel="stylesheet" type="text/css" href="events.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
     <!-- ng-table -->
     <script type="text/javascript" src="lib/ng-table/ng-table.min.js"></script>
     <link rel="stylesheet" type="text/css" href="lib/ng-table/ng-table.min.css">
@@ -21,7 +22,15 @@
 
 <div class="container">
     <h2><b>Personalized list of upcoming events</b></h2>
-
+	<h3><b>Select Radius within which you want to search for events(miles)</b>
+	<select class="dropdown">
+		<option value="100">100</option>
+		<option value="200">200</option>
+		<option value="300">300</option>
+		<option value="400">400</option>
+	</select>
+	</h3>
+	</br>
     <div class="panel-group" id="accordion">
 
         <div class="panel panel-default">
