@@ -1,45 +1,37 @@
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
+import org.json.JSONObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.SettableFuture;
-import com.google.maps.DistanceMatrixApi;
-import com.google.maps.DistanceMatrixApiRequest;
 import com.google.maps.GeoApiContext;
 import com.wrapper.spotify.Api;
 import com.wrapper.spotify.models.AuthorizationCodeCredentials;
-import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import org.json.*;
-
-import org.apache.jena.query.Query;
-import org.apache.jena.query.QueryExecution;
-import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.QueryFactory;
-import org.apache.jena.query.ResultSet;
-import org.apache.jena.query.ResultSetFormatter;
-import org.apache.jena.sparql.resultset.ResultsFormat;
 /*
  *  var client_id = '462eee0168014d178e3c9303d0b67ede'; // Your client id
 var client_secret = '0b1daa19dd724200a09241e093273a7c'; // Your secret
@@ -159,7 +151,7 @@ public class Test{
     /*** This is  where the final answer is***/ 
     
     @RequestMapping(value = "/lat/{latitude}/lon/{longitude}/rad/{radius}", method=RequestMethod.POST, produces="application/json")
-    ResponseEntity<Object> getFromServer(@PathVariable String latitude, @PathVariable String longitude, @PathVariable String radius,
+    @ResponseBody ResponseEntity<JsonNode> getFromServer(@PathVariable String latitude, @PathVariable String longitude, @PathVariable String radius,
     		@RequestBody List<String> artists) throws Exception {
     	System.out.println("Inside latlong api endpoint "+artists.size());
 
@@ -210,12 +202,14 @@ public class Test{
     		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     		ResultSetFormatter.outputAsJSON(outputStream, results);
     		String json = new String(outputStream.toByteArray());
-    		org.json.JSONObject jsonObj = new JSONObject(json);
+    		ObjectMapper mapper = new ObjectMapper();
+    	    JsonNode jsonObj = mapper.readTree(json);
+ 
     		System.out.println(jsonObj); //Fuseki code ends here
     	
     	HttpHeaders res = new HttpHeaders();
     	
-    	return new ResponseEntity<Object>(jsonObj , res, HttpStatus.OK);
+    	return new ResponseEntity<JsonNode>(jsonObj , res, HttpStatus.OK);
     	
     	
         
