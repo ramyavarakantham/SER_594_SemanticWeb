@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<head>
+    <title>JSON Data Binding to the UI</title>
+</head>
+
+
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div>
+        Event name: <p ng-bind="name"></p>
+    </div>
+
+</div>
+
+<script>
+    var all_events_array = [];
+    test();
+
+
+
+function test(){
+    var eventsjson = {
+        "head": {
+            "vars": ["EventName", "eventurl", "address", "eventArtist", "datetime", "lat", "long", "city", "state", "country", "postalcodewhere"]
+        },
+        "results": {
+            "bindings": [
+                {
+                    "EventName": {"type": "literal", "value": "Fifth Harmony"},
+                    "eventurl": {
+                        "type": "literal",
+                        "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
+                    },
+                    "address": {"type": "literal", "value": "274 Main Street"},
+                    "eventArtist": {"type": "literal", "value": "Fifth Harmony"},
+                    "datetime": {"type": "literal", "value": "2018-03-24 19:30:00"},
+                    "lat": {"type": "literal", "value": "35.67"},
+                    "long": {"type": "literal", "value": "139.77"},
+                    "city": {"type": "literal", "value": "Northampton"},
+                    "state": {"type": "literal", "value": "Massachusetts"}
+                },
+                {
+                    "EventName": {"type": "literal", "value": "Fifth Harmony"},
+                    "eventurl": {
+                        "type": "literal",
+                        "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
+                    },
+                    "address": {"type": "literal", "value": "274 Main Street"},
+                    "eventArtist": {"type": "literal", "value": "Fifth Harmony"},
+                    "datetime": {"type": "literal", "value": "2018-03-24 19:30:00"},
+                    "lat": {"type": "literal", "value": "35.67"},
+                    "long": {"type": "literal", "value": "139.77"},
+                    "city": {"type": "literal", "value": "Northampton"},
+                    "state": {"type": "literal", "value": "Tokyo"}
+                }
+            ]
+        }
+    };
+
+    var results = eventsjson["results"]["bindings"];
+
+
+    for ( var i=0; i < results.length; i++){
+        var results_obj = results[i];
+        var event_array = [];
+        for (var key in results_obj){
+
+            var attName = key;
+            var attType = results_obj[key]["type"];
+            var attValue = results_obj[key]["value"];
+            event_array.push(attName + ": " + attValue);
+        }
+        all_events_array.push(event_array);
+    }
+}
+
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+
+
+        $scope.eventsInfo = all_events_array;
+        for (var i=0; i< all_events_array.length; i++){
+            var x = all_events_array[i];
+            for( var k=0; k<x.length; k++){
+                $scope.name = x[0];
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>
