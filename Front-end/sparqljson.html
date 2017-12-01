@@ -10,7 +10,7 @@
 
 <div ng-app="myApp" ng-controller="myCtrl">
     <div>
-        Event name: <p ng-bind="name"></p>
+        <p ng-bind="name"></p>
     </div>
 
 </div>
@@ -81,7 +81,7 @@ function test(){
     app.controller('myCtrl', function($scope) {
 
 
-        $scope.eventsInfo = all_events_array;
+        
         for (var i=0; i< all_events_array.length; i++){
             var x = all_events_array[i];
             for( var k=0; k<x.length; k++){

@@ -31,6 +31,10 @@
 	</select> 
 	</h3>
 	</br>
+	<div>
+	 <p ng-bind="name"></p>
+	</div>
+	</br>
     <div class="panel-group" id="accordion">
 
         <div class="panel panel-default">
@@ -375,8 +379,32 @@
 				longitude = position.coords.longitude; 
 				//api post call is made to send user's location, user input radius and aritst list
 				$http.post("http://localhost:8080/lat/"+latitude+"/lon/"+longitude+"/rad/"+radius, JSON.stringify(names)).then(function(response){
-                console.log(response); //response should hold event details as json 
-                alert("I'm getting google maps response");
+					console.log("I'm getting google maps response");
+					var all_events_array = [];//array of event arrays
+					console.log(response); //response should hold event details as json 
+					var eventsjson = response.data;
+					var results = eventsjson.results.bindings;//code to parse events json response
+				    for ( var i=0; i < results.length; i++){
+				        var results_obj = results[i];
+				        var event_array = [];
+				        for (var key in results_obj){
+
+				            var attName = key;
+				            var attType = results_obj[key]["type"];
+				            var attValue = results_obj[key]["value"];
+				            event_array.push(attName + ": " + attValue);
+				        }
+				        all_events_array.push(event_array);
+				    }//for loop ends here
+				    for (var i=0; i< all_events_array.length; i++){
+			            var x = all_events_array[i];
+			            for( var k=0; k<x.length; k++){
+			            	var index=x[0].indexOf(":")+1;
+			                $scope.name = x[0].substr(index);//binding event name to UI
+			                console.log(x[k]);
+			            }
+			        }
+                
                 /*  
                
                 Parse the json data here and make api calls to google maps api to find distance and time for different modes of transport
