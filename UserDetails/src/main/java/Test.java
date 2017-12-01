@@ -161,7 +161,7 @@ public class Test{
     @RequestMapping(value = "/lat/{latitude}/lon/{longitude}/rad/{radius}", method=RequestMethod.POST, produces="application/json")
     ResponseEntity<Object> getFromServer(@PathVariable String latitude, @PathVariable String longitude, @PathVariable String radius,
     		@RequestBody List<String> artists) throws Exception {
-    	
+    	System.out.println("Inside latlong api endpoint "+artists.size());
 
     	/*
     	 * Include fuseki code to get event details based on artist. Push event details into json object and send it to front-end
@@ -169,7 +169,7 @@ public class Test{
     	
     	//This is the Fuseki code
     	double rad=Double.parseDouble(radius);
-    	 String serviceEndPoint = "http://localhost:3030/eventsds/query";
+    	 String serviceEndPoint = "http://localhost:3030/UserDetails/query";
     	 String al = "";
     	 int i=0;
     	 for(i=0; i<artists.size()-1;i++)

@@ -21,6 +21,9 @@
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     
+
+    
+
     <dependency>
 		  <groupId>se.michaelthelin.spotify</groupId>
 		  <artifactId>spotify-web-api-java</artifactId>

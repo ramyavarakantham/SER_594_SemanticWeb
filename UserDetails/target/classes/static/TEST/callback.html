@@ -28,7 +28,7 @@
 		<option value="200">200</option>
 		<option value="300">300</option>
 		<option value="400">400</option>
-	</select>
+	</select> 
 	</h3>
 	</br>
     <div class="panel-group" id="accordion">
@@ -290,12 +290,13 @@
         }
 		global_token = "test";
 		 names = []; //stores artists lists
+		 var radius=50;//user input radius
 		//response of access token api call
         $http(req).then(function(response) {
   				return response.data.value;  
             },
             function(error) {
-                alert(error.data.message);
+                alert("spotify first 50 request alert "+error.data.message);
             }).then(function(token){ //token has access token value
             //With the help of access token, make an api call to spotify web api to get first 50 followed artists
 			var req_followed = {
@@ -322,6 +323,7 @@
             function(error) {
                 console.log(error);
             }).then(function(r){
+            	console.log("Getting the first 50");
 					//artists data-json parsing
 				artists = r.data.artists.items;
 				//push artists name to names list	
@@ -342,6 +344,7 @@
 	//function to hold followed artists spoitfy web api response
 	function sendData(response)
 	{	
+		console.log("Getting the next 50");
 		//artists data-json parsing
 		artists = response.data.artists.items;
 		//push artists name to names list	
@@ -352,7 +355,7 @@
 		console.log(names.length);
 		
 		//code to hold user input radius
-		var radius="";
+		
 		$scope.GetValue = function(){
 		console.log($scope.Radius);
 		radius=$scope.Radius;
@@ -367,13 +370,15 @@
 				
 				//user's lat and long is held here
 		function showPosition(position) {
+				console.log("Getting the user's location");
 				latitude = position.coords.latitude
 				longitude = position.coords.longitude; 
 				//api post call is made to send user's location, user input radius and aritst list
 				$http.post("http://localhost:8080/lat/"+latitude+"/lon/"+longitude+"/rad/"+radius, JSON.stringify(names)).then(function(response){
                 console.log(response); //response should hold event details as json 
+                alert("I'm getting google maps response");
                 /*  
-                
+               
                 Parse the json data here and make api calls to google maps api to find distance and time for different modes of transport
                 
                 */
@@ -407,7 +412,7 @@
 				*/ 
             },
             function(error) {
-                alert(error.data.message);
+                alert("google maps url alert "+error.data.message);
             });//api call to lat, long-endpoint-test.java ends here
 		}//showposition function call ends here
 	}//send data function call ends here	
