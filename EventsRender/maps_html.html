@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Travel modes in directions</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+
+<body ng-app="myApp" ng-controller="myCtrl">>
+<div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode" >
+        <option value="DRIVING">Driving</option>
+        <option value="WALKING">Walking</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="TRANSIT">Transit</option>
+    </select>
+</div>
+<div id="map"></div>
+<script>
+    function initMap() {
+	var modeTravel="DRIVING";
+	var markersArray = [];
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var directionsService = new google.maps.DirectionsService;
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: {lat: 33.3039, lng: -111.6790}
+        });
+        directionsDisplay.setMap(map);
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        document.getElementById('mode').addEventListener('change', function() {
+            calculateAndDisplayRoute(directionsService, directionsDisplay);
+        });
+		
+	var bounds = new google.maps.LatLngBounds;
+	var origin1 = {lat: 55.93, lng: -3.118};
+    var destinationB = {lat: 50.087, lng: 14.421};
+	
+	var geocoder = new google.maps.Geocoder;
+	var service = new google.maps.DistanceMatrixService;
+	service.getDistanceMatrix({
+          origins: [origin1],
+          destinations: [destinationB],
+          travelMode: "DRIVING",
+          unitSystem: google.maps.UnitSystem.METRIC,
+          avoidHighways: false,
+          avoidTolls: false
+        }, function(response, status) {
+          if (status !== 'OK') {
+            alert('Error was: ' + status);
+          } else {
+            var originList = response.originAddresses;
+            var destinationList = response.destinationAddresses;
+            var outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+            deleteMarkers(markersArray);
+
+           var showGeocodedAddressOnMap = function(asDestination) {
+              
+              return function(results, status) {
+                if (status === 'OK') {
+                  markersArray.push(new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location,
+                  }));
+                } else {
+                  alert('Geocode was not successful due to: ' + status);
+                }
+              };
+            };
+
+           for (var i = 0; i < originList.length; i++) {
+              var results = response.rows[i].elements;
+              geocoder.geocode({'address': originList[i]},
+                  showGeocodedAddressOnMap(false));
+              for (var j = 0; j < results.length; j++) {
+                geocoder.geocode({'address': destinationList[j]},
+                    //showGeocodedAddressOnMap(true));
+                alert(results[j].distance.text);
+				alert(results[j].duration.text);
+				//outputDiv.innerHTML += results[j].distance.text + ' in ' +
+                  //  results[j].duration.text + '<br>';
+              }
+            }
+          }
+        });
+		
+    }
+	function deleteMarkers(markersArray) {
+        for (var i = 0; i < markersArray.length; i++) {
+          markersArray[i].setMap(null);
+        }
+        markersArray = [];
+      }
+	
+    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        var selectedMode = document.getElementById('mode').value;
+        directionsService.route({
+            origin: {lat: 33.3039, lng: -111.6790},  // Haight.
+            destination: {lat: 33.718234, lng: -111.928001},  // Ocean Beach.
+            // Note that Javascript allows us to access the constant
+            // using square brackets and a string value as its
+            // "property."
+            travelMode: google.maps.TravelMode[selectedMode]
+        }, function(response, status) {
+            if (status == 'OK') {
+                directionsDisplay.setDirections(response);
+            } else {
+                window.alert('Directions request failed due to ' + status);
+            }
+        });
+    }
+	
+	
+var app =  angular.module('myApp', []);
+
+app.controller('myCtrl', function($scope, $http){
+		//for(var i=0;i<modes.length;i++){
+     var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=33.4484,-112.0740&destinations=33.424564,-111.928001";
+     	//if(modes[i]=="transit")
+          // url_maps+="&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+      	//else
+		
+           
+			url_maps+="&mode="+"driving"+"&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
+                	//response from google maps api is held here
+            $http.get(url_maps).then(function(response1){ //response1 holds json data for this request
+            console.log(response1.rows[0].elements[0].distance.text);
+			console.log(response1.rows[0].elements[0].duration.text);
+                    });	//response-google maps api ends here
+                //}
+			
+				});
+	
+				</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjwKV5lZmi23I-VRodK5o85oT1uRMu28k&callback=initMap">
+		
+</script>
+
+</body>
+</html>

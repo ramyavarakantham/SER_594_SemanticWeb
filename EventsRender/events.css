@@ -1,0 +1,27 @@
+body {
+    background-image: url("image2.jpg");
+}
+
+body, .modal-open .page-container, .modal-open .page-container .navbar-fixed-top, .modal-open .modal-container {
+    overflow-y: scroll;
+}
+@media (max-width: 979px) {
+    .modal-open .page-container .navbar-fixed-top {
+        overflow-y: visible;
+    }
+}
+#map-canvas {
+    height: 400px;
+}
+
+
+.tab-content > .tab-pane {
+    display: block;
+    height:0;
+    overflow:hidden;
+}
+
+.tab-content > .active {
+    display: block;
+    height:auto;
+}

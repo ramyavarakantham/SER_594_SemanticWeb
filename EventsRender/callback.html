@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="US_en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SSD Automation</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <!-- custom css file -->
+    <link rel="stylesheet" type="text/css" href="events.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- ng-table -->
+    <script type="text/javascript" src="lib/ng-table/ng-table.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/ng-table/ng-table.min.css">
+</head>
+
+<body ng-app="myApp1" ng-controller="myCtrl1">
+
+<div class="container">
+    <h2><b>Personalized list of upcoming events</b></h2>
+	<h3><b>Select Radius within which you want to search for events(miles)</b>
+	<select class="dropdown" ng-model="Radius" ng-change="GetValue()">
+		<option value="100">100</option>
+		<option value="200">200</option>
+		<option value="300">300</option>
+		<option value="400">400</option>
+	</select> 
+	</h3>
+	</br>
+	<div>
+	 <p ng-bind="name"></p>
+	</div>
+	</br>
+	
+    <div class="panel-group" id="accordion" >
+        <div class="panel panel-default" >
+            <div class="panel-heading" ng-repeat = "x in allEvents" >
+                <h4 class="panel-title" >
+                    <a data-toggle="collapse" data-parent="#accordion" ng-model="$index"  ng-repeat = "str in :: x " >
+                        <div class="row" ng-if="str != ''">
+                            <div class="col-sm-4" ng-if="$index == 0">
+							<b>{{str}}</b>
+							<br/>
+							</div>
+							
+							<div class="col-sm-12" ng-if="$index == 1">
+							{{str}}
+							<br/>
+							</div>
+							
+							<div class="col-sm-4" ng-if="$index == 3">
+							{{str}}
+							<br/>
+							</div>
+							
+							<div class="col-sm-4" ng-if="$index == 2">
+							{{str}}
+							<br/>
+							</div>
+							
+							<div class="col-sm-4" ng-if="$index == 4">
+							{{str}}
+							</div>
+							
+							<div class="col-sm-4" ng-if="$index == 7">
+							{{str}}
+							</div>
+							<div class="col-sm-4" ng-if="$index == 8">
+							{{str}}
+							</div>
+							<div class="col-sm-4" ng-if="$index == 9">
+							{{str}}
+							</div>
+							
+							<a type="button" class="btn btn-info pull-right" href='maps_html.html'>See on Maps</a>
+							
+							</div>
+						</div>
+						
+                    </div>
+                    </a>
+                </h4>
+            </div>
+             
+        </div>
+    </div>
+	
+
+    <div class="row" align="bottom">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ul class="pagination">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+
+
+</div>
+    
+</body>
+
+<script>
+	//initializing the application
+	
+		var all_events_array = [];
+		test();
+	
+				function test(){
+				
+					var eventsjson = {
+					"head": {
+					"vars": ["EventName", "eventurl", "address", "eventArtist", "datetime", "lat", "long", "city", "state", "country", "postalcodewhere"]
+					},
+					"results": {
+					"bindings": [
+					{
+						"EventName": {"type": "literal", "value": "Fifth Harmony"},
+						"eventurl": {
+                        "type": "literal",
+                        "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
+                    },
+                    "address": {"type": "literal", "value": "274 Main Street"},
+                    "eventArtist": {"type": "literal", "value": "Fifth Harmony"},
+                    "datetime": {"type": "literal", "value": "2018-03-24 19:30:00"},
+                    "lat": {"type": "literal", "value": "35.67"},
+                    "long": {"type": "literal", "value": "139.77"},
+                    "city": {"type": "literal", "value": "Northampton"},
+                    "state": {"type": "literal", "value": "Massachusetts"}
+                },
+                {
+                    "EventName": {"type": "literal", "value": "Fifth Harmony"},
+                    "eventurl": {
+                        "type": "literal",
+                        "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
+                    },
+                    "address": {"type": "literal", "value": "274 Main Street"},
+                    "eventArtist": {"type": "literal", "value": "Fifth Harmony"},
+                    "datetime": {"type": "literal", "value": "2018-03-24 19:30:00"},
+                    "lat": {"type": "literal", "value": "35.67"},
+                    "long": {"type": "literal", "value": "139.77"},
+                    "city": {"type": "literal", "value": "Northampton"},
+                    "state": {"type": "literal", "value": "Tokyo"}
+                }
+            ]
+        }
+    };
+
+					var results = eventsjson["results"]["bindings"];
+					var results = eventsjson.results.bindings;//code to parse events json response
+				    for ( var i=0; i < results.length; i++){
+				        var results_obj = results[i];
+				        var event_array = [];
+				        for (var key in results_obj){
+
+				            var attName = key;
+				            var attType = results_obj[key]["type"];
+				            var attValue = results_obj[key]["value"];
+				            event_array.push(attName + ": " + attValue);
+				        }
+				        all_events_array.push(event_array);
+						
+				    }//for loop ends here
+					
+				    
+					}
+		var app =  angular.module('myApp1', []);
+		app.controller('myCtrl1', function($scope){
+
+		$scope.allEvents = all_events_array;
+		
+		
+		
+		});
+		
+		
+</script>
