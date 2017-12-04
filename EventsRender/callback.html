@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="US_en">
 
+
 <head>
     <meta charset="UTF-8">
     <title>SSD Automation</title>
@@ -10,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/ngStorage.min.js"></script>
     <!-- custom css file -->
     <link rel="stylesheet" type="text/css" href="events.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -23,6 +25,7 @@
 <div class="container">
     <div class="panel-group" id="accordion" >
 		<div ng-repeat = "event in allEvents">
+		
 			<div class="panel panel-default" >
 					<div class="panel-heading"  >
 						<h4 class="panel-title" >
@@ -31,9 +34,9 @@
 									<div class="col-sm-4">
 										<b><div type="text" ng-bind="event[0].substr(10)"></div></b>
 									</div>
-									<div class="col-sm-4"  type="text" ng-bind="event[4].substr(9)"></div>
-									<div class="col-sm-4"  type="text" ng-bind="event[2].substr(8)">
-										
+									<div class="col-sm-4"  type="text">
+									<b>Time : </b>
+									{{event[4].substr(9)}}
 									</div>
 								</div>
 						</h4> <!--panel title ends here-->
@@ -41,17 +44,25 @@
 					<div class="panel-body">
 							<div class="row">
 								<div class="col-sm-8">
-									<b>Event Info</b> <br/>
-									There is a 4 ticket limit for the Verified Fan Presale and early VIP packages. There is a 6
-									ticket limit for the VIP Packages. There is an 8 ticket limit for the public onsale.<br/>
-									<br/><b>Artist</b> <br/> <p type="text" ng-bind="event[3].substr(12)">
+									<b>Event URL</b> <br/>
+									{{event[1].substr(9)}}
+									<br/>
+									<br/><b>Artist</b> <br/>
+									{{event[3].substr(12)}}
+									<br/>
+									<br/> <b>Venue Details</b> <br/> 
+									{{event[7].substr(5)}}
+									<br/>
+									{{event[8].substr(6)}}
+									<br/>
+									{{event[9].substr(10)}}
+									
 								</div>
 								<div class="col-sm-2"></div>
-								<div class="col-sm-2">
-									<a type="button" class="btn btn-info"
-									   href="event[1].substr(9)">Find
-										Tickets</a><br/><br/>
-									<button type="button" class="btn btn-info " onclick="">Find Venue</button>
+								<div class="col-sm-2" >
+									<a type="btn btn-info pull-right" class="btn btn-info pull-right" href='maps_html.html' ng-click="saveLatLon($index)">See on Maps</a>
+								</div>
+								<div class="col-sm-2" >
 								</div>
 							</div>
 					</div><!--panel body ends here-->
@@ -101,7 +112,7 @@
 					"results": {
 					"bindings": [
 					{
-						"EventName": {"type": "literal", "value": "abc event 1"},
+						"EventName": {"type": "literal", "value": "Fifth Harmony"},
 						"eventurl": {
                         "type": "literal",
                         "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
@@ -109,13 +120,13 @@
                     "address": {"type": "literal", "value": "274 Main Street"},
                     "eventArtist": {"type": "literal", "value": "Fifth Harmony"},
                     "datetime": {"type": "literal", "value": "2018-03-24 19:30:00"},
-                    "lat": {"type": "literal", "value": "35.67"},
-                    "long": {"type": "literal", "value": "139.77"},
+                    "lat": {"type": "literal", "value": "40	.67"},
+                    "long": {"type": "literal", "value": "-100.77"},
                     "city": {"type": "literal", "value": "Northampton"},
                     "state": {"type": "literal", "value": "Massachusetts"}
                 },
                 {
-                    "EventName": {"type": "literal", "value": "abc event 2"},
+                    "EventName": {"type": "literal", "value": "Fifth Harmony"},
                     "eventurl": {
                         "type": "literal",
                         "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
@@ -150,14 +161,27 @@
 					
 				    
 					}
-		var app =  angular.module('myApp1', []);
-		app.controller('myCtrl1', function($scope){
+		var app =  angular.module('myApp1', ['ngStorage']);
+		app.controller('myCtrl1', function($scope,$localStorage){
 
 		$scope.allEvents = all_events_array;
 		
 		
+		$scope.saveLatLon = function(i){
+			
+			$localStorage.lat = $scope.allEvents[i][5];
+			$localStorage.lon  = $scope.allEvents[i][6];
+			console.log($localStorage.lat)
+			console.log($localStorage.lon)
+		}
+		
+		$scope.getLatLon = function(i){
+			
+			$scope.lat = $localStorage.lat;
+			$scope.lon = $localStorage.lon;
+			
+		}
+		
 		
 		});
-		
-		
 </script>
