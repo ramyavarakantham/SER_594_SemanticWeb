@@ -21,75 +21,47 @@
 <body ng-app="myApp1" ng-controller="myCtrl1">
 
 <div class="container">
-    <h2><b>Personalized list of upcoming events</b></h2>
-	<h3><b>Select Radius within which you want to search for events(miles)</b>
-	<select class="dropdown" ng-model="Radius" ng-change="GetValue()">
-		<option value="100">100</option>
-		<option value="200">200</option>
-		<option value="300">300</option>
-		<option value="400">400</option>
-	</select> 
-	</h3>
-	</br>
-	<div>
-	 <p ng-bind="name"></p>
-	</div>
-	</br>
-	
     <div class="panel-group" id="accordion" >
-        <div class="panel panel-default" >
-            <div class="panel-heading" ng-repeat = "x in allEvents" >
-                <h4 class="panel-title" >
-                    <a data-toggle="collapse" data-parent="#accordion" ng-model="$index"  ng-repeat = "str in :: x " >
-                        <div class="row" ng-if="str != ''">
-                            <div class="col-sm-4" ng-if="$index == 0">
-							<b>{{str}}</b>
-							<br/>
+		<div ng-repeat = "event in allEvents">
+			<div class="panel panel-default" >
+					<div class="panel-heading"  >
+						<h4 class="panel-title" >
+								<div class="row" >
+									<!--Displays Event name-->
+									<div class="col-sm-4">
+										<b><div type="text" ng-bind="event[0].substr(10)"></div></b>
+									</div>
+									<div class="col-sm-4"  type="text" ng-bind="event[4].substr(9)"></div>
+									<div class="col-sm-4"  type="text" ng-bind="event[2].substr(8)">
+										
+									</div>
+								</div>
+						</h4> <!--panel title ends here-->
+					</div><!--panel heading ends here-->	
+					<div class="panel-body">
+							<div class="row">
+								<div class="col-sm-8">
+									<b>Event Info</b> <br/>
+									There is a 4 ticket limit for the Verified Fan Presale and early VIP packages. There is a 6
+									ticket limit for the VIP Packages. There is an 8 ticket limit for the public onsale.<br/>
+									<br/><b>Artist</b> <br/> <p type="text" ng-bind="event[3].substr(12)">
+								</div>
+								<div class="col-sm-2"></div>
+								<div class="col-sm-2">
+									<a type="button" class="btn btn-info"
+									   href="event[1].substr(9)">Find
+										Tickets</a><br/><br/>
+									<button type="button" class="btn btn-info " onclick="">Find Venue</button>
+								</div>
 							</div>
-							
-							<div class="col-sm-12" ng-if="$index == 1">
-							{{str}}
-							<br/>
-							</div>
-							
-							<div class="col-sm-4" ng-if="$index == 3">
-							{{str}}
-							<br/>
-							</div>
-							
-							<div class="col-sm-4" ng-if="$index == 2">
-							{{str}}
-							<br/>
-							</div>
-							
-							<div class="col-sm-4" ng-if="$index == 4">
-							{{str}}
-							</div>
-							
-							<div class="col-sm-4" ng-if="$index == 7">
-							{{str}}
-							</div>
-							<div class="col-sm-4" ng-if="$index == 8">
-							{{str}}
-							</div>
-							<div class="col-sm-4" ng-if="$index == 9">
-							{{str}}
-							</div>
-							
-							<a type="button" class="btn btn-info pull-right" href='maps_html.html'>See on Maps</a>
-							
-							</div>
-						</div>
-						
-                    </div>
-                    </a>
-                </h4>
-            </div>
-             
-        </div>
-    </div>
-	
+					</div><!--panel body ends here-->
+			</div><!--event panel ends here-->
+        </div><!--for every event, ends here-->
+    </div> <!--Panel group ends here-->     
+</div><!--container div ends here-->
 
+	
+<!--Pagination starts here-->
     <div class="row" align="bottom">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
@@ -108,7 +80,7 @@
         </div>
         <div class="col-sm-4"></div>
     </div>
-
+<!--Pagination ends here-->
 
 </div>
     
@@ -129,7 +101,7 @@
 					"results": {
 					"bindings": [
 					{
-						"EventName": {"type": "literal", "value": "Fifth Harmony"},
+						"EventName": {"type": "literal", "value": "abc event 1"},
 						"eventurl": {
                         "type": "literal",
                         "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
@@ -143,7 +115,7 @@
                     "state": {"type": "literal", "value": "Massachusetts"}
                 },
                 {
-                    "EventName": {"type": "literal", "value": "Fifth Harmony"},
+                    "EventName": {"type": "literal", "value": "abc event 2"},
                     "eventurl": {
                         "type": "literal",
                         "value": "http://eventful.com/northampton_ma/events/darlingside-/E0-001-108778197-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"
