@@ -71,33 +71,29 @@
     </div> <!--Panel group ends here-->     
 </div><!--container div ends here-->
 
-	
-<!--Pagination starts here-->
-    <div class="row" align="bottom">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <ul class="pagination">
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">10</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4"></div>
-    </div>
-<!--Pagination ends here-->
+<button class= "btn btn-info" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </div>
     
 </body>
 
 <script>
+	
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 	//initializing the application
 	
 		var all_events_array = [];
