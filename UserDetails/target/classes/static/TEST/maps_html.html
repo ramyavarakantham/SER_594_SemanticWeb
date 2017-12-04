@@ -1,83 +1,187 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="lib/ng-table/ng-table.min.js"></script>
+    
+	
+	<script type="text/javascript" src="bower_components/angular/ngStorage.min.js"></script>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Travel modes in directions</title>
     <style>
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
-        #map {
-            height: 100%;
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
         }
-        /* Optional: Makes the sample page fill the window. */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #floating-panel {
-            position: absolute;
-            top: 10px;
-            left: 25%;
-            z-index: 5;
-            background-color: #fff;
-            padding: 5px;
-            border: 1px solid #999;
-            text-align: center;
-            font-family: 'Roboto','sans-serif';
-            line-height: 30px;
-            padding-left: 10px;
-        }
+     #output  {
+         height: 5%;
+         line-height: 30px;
+        margin: 10;
+        padding: 0;
+
+     }
     </style>
-</head>
-
-
-<body>
-<div id="floating-panel">
+  </head>
+  <body >
+    <div id="floating-panel">
     <b>Mode of Travel: </b>
     <select id="mode">
-        <option value="DRIVING">Driving</option>
-        <option value="WALKING">Walking</option>
-        <option value="BICYCLING">Bicycling</option>
-        <option value="TRANSIT">Transit</option>
+      <option value="DRIVING">Driving</option>
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
     </select>
-</div>
-<div id="map"></div>
-<script>
-    function initMap() {
+    </div>
+     <div id="output"></div>
+	 <br/>
+	 <div id="ctrl" ng-app="myApp1" ng-controller="myCtrl1" >
+	 <div id="latlong" ng-init="getLatLon();"></div>
+	 {{lat}}, {{lon}}
+	 <br/>
+	 </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
         var directionsDisplay = new google.maps.DirectionsRenderer;
         var directionsService = new google.maps.DirectionsService;
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14,
-            center: {lat: 33.3039, lng: -111.6790}
+          zoom: 14,
+          center: {lat: 37.77, lng: -122.447}
         });
-        directionsDisplay.setMap(map);
-        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        
+       directionsDisplay.setMap(map);
+
+       calculateAndDisplayRoute(directionsService, directionsDisplay);
         document.getElementById('mode').addEventListener('change', function() {
-            calculateAndDisplayRoute(directionsService, directionsDisplay);
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
         });
-    }
-    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        var selectedMode = document.getElementById('mode').value;
+      }
+
+     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        
+		var scope1 = angular.element(document.getElementById('latlong')).scope();
+		console.log(typeof(parseInt(scope1.lat)));
+		console.log(scope1.lat);
+		console.log(typeof(parseInt(scope1.lon)));
+		console.log(scope1.lon);
+				
+		var selectedMode = document.getElementById('mode').value;
         directionsService.route({
-            origin: {lat: 33.3039, lng: -111.6790},  // Haight.
-            destination: {lat: 33.718234, lng: -111.928001},  // Ocean Beach.
-            // Note that Javascript allows us to access the constant
-            // using square brackets and a string value as its
-            // "property."
-            travelMode: google.maps.TravelMode[selectedMode]
+          origin: {lat: 37.77, lng: -122.447},  // Haight.
+          destination: {lat: parseInt(scope1.lat), lng: parseInt(scope1.lon)},  // Ocean Beach.
+          // Note that Javascript allows us to access the constant
+          // using square brackets and a string value as its
+          // "property."
+          travelMode: google.maps.TravelMode[selectedMode]
         }, function(response, status) {
-            if (status == 'OK') {
-                directionsDisplay.setDirections(response);
-            } else {
-                window.alert('Directions request failed due to ' + status);
-            }
+          if (status == 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
         });
-    }
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjwKV5lZmi23I-VRodK5o85oT1uRMu28k&callback=initMap">
-</script>
-</body>
+         var bounds = new google.maps.LatLngBounds;
+        var markersArray = [];
+
+       var origin1 = {lat: 37.77, lng: -122.447};
+        var destinationB = {lat: parseInt(scope1.lat), lng: parseInt(scope1.lon)};
+
+       var destinationIcon = 'https://chart.googleapis.com/chart?' +
+            'chst=d_map_pin_letter&chld=D|FF0000|000000';
+        var originIcon = 'https://chart.googleapis.com/chart?' +
+            'chst=d_map_pin_letter&chld=O|FFFF00|000000';
+      
+       var geocoder = new google.maps.Geocoder;
+
+       var service = new google.maps.DistanceMatrixService;
+        service.getDistanceMatrix({
+          origins: [origin1],
+          destinations: [destinationB],
+          travelMode: 'DRIVING',
+          unitSystem: google.maps.UnitSystem.METRIC,
+          avoidHighways: false,
+          avoidTolls: false
+        }, function(response, status) {
+          if (status !== 'OK') {
+            alert('Error was: ' + status);
+          } else {
+            var originList = response.originAddresses;
+            var destinationList = response.destinationAddresses;
+            var outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+            
+
+           var showGeocodedAddressOnMap = function(asDestination) {
+              var icon = asDestination ? destinationIcon : originIcon;
+              return function(results, status) {
+                if (status === 'OK') {
+                 ;
+                } else {
+                  alert('Geocode was not successful due to: ' + status);
+                }
+              };
+            };
+
+           for (var i = 0; i < originList.length; i++) {
+              var results = response.rows[i].elements;
+        
+              for (var j = 0; j < results.length; j++) {
+              
+                outputDiv.innerHTML += results[j].distance.text + ' in ' +
+                    results[j].duration.text + '<br>';
+            
+             }
+            }
+          }
+        });
+         function deleteMarkers(markersArray) {
+        for (var i = 0; i < markersArray.length; i++) {
+          markersArray[i].setMap(null);
+        }
+        markersArray = [];
+      }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_plBVGfV7uOJp6-RT2WZp0-LzaVOPqrc&callback=initMap">
+    </script>
+  </body>
 </html>
+<script>
+var app =  angular.module('myApp1', ['ngStorage']);
+		app.controller('myCtrl1', function($scope,$localStorage){
+
+		
+		
+		
+		$scope.getLatLon = function(){
+			
+			$scope.lat = $localStorage.lat.substr(4);
+			$scope.lon = $localStorage.lon.substr(5);
+			
+		 }
+		
+		});
+</script>

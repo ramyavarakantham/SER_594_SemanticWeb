@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/ngStorage.min.js"></script>
     <!-- custom css file -->
     <link rel="stylesheet" type="text/css" href="events.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -83,10 +84,11 @@
     </div> <!--Panel group ends here--> 
 	
 </div>
-<button class= "btn btn-info" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button type="btn btn-info pull-right" class= "btn btn-info pull-right" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     
 </body>
 
+</html>
 <script>
 
 window.onscroll = function() {scrollFunction()};
@@ -105,77 +107,78 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+
 	//initializing the application
 	var app =  angular.module('myApp1', []);
-	app.controller('myCtrl1', function($scope, $http){
+	app.controller('myCtrl1', function($scope, $http, $localStorage){
 		//Api Call to get access token
 		 var req = {
             method: 'GET',
             url: 'http://localhost:8080/details'
-        }
+		}
 		global_token = "test";
-		 names = []; //stores artists lists
-		 var radius=50;//user input radius
+		names = []; //stores artists lists
+		var radius=50;//user input radius
 		//response of access token api call
         $http(req).then(function(response) {
   				return response.data.value;  
-            },
-            function(error) {
-                alert("spotify first 50 request alert "+error.data.message);
-            }).then(function(token){ //token has access token value
-            //With the help of access token, make an api call to spotify web api to get first 50 followed artists
-			var req_followed = {
-	            method: 'GET',
-	            url: 'https://api.spotify.com/v1/me/following?type=artist&limit=50',
-				headers: {
-					"Authorization": "Bearer "+token
-				}
-        	} //request ends here
-			//Spotify api call to retrieve next set of followed artists
-			var x="4AVFqumd2ogHFlRbKIjp1t";
-			var url_gen="https://api.spotify.com/v1/me/following?limit=50&after="+x+"&type=artist";
-			var req_followed_after = {
-		            method: 'GET',
-		            url: url_gen,
-					headers: {
-						"Authorization": "Bearer "+token
-					}
-		        } //req ends here
+        },
+        function(error) {
+			alert("spotify first 50 request alert "+error.data.message);
+        }).then(function(token){ //token has access token value
+        //With the help of access token, make an api call to spotify web api to get first 50 followed artists
+		var req_followed = {
+			method: 'GET',
+	        url: 'https://api.spotify.com/v1/me/following?type=artist&limit=50',
+			headers: {
+				"Authorization": "Bearer "+token
+			}
+        } //request ends here
+		//Spotify api call to retrieve next set of followed artists
+		var x="4AVFqumd2ogHFlRbKIjp1t";
+		var url_gen="https://api.spotify.com/v1/me/following?limit=50&after="+x+"&type=artist";
+		var req_followed_after = {
+		    method: 'GET',
+		    url: url_gen,
+			headers: {
+				"Authorization": "Bearer "+token
+			}
+		} //req ends here
 		//response of first 50 artists is held here
-		 $http(req_followed).then(function(response) {
+		$http(req_followed).then(function(response) {
                return response;    
-            },
-            function(error) {
-                console.log(error);
-            }).then(function(r){
-            	console.log("Getting the first 50");
-					//artists data-json parsing
-				artists = r.data.artists.items;
-				//push artists name to names list	
-				for (var i = 0; i < artists.length; i++) {
-					names.push(artists[i].name);
+			},
+        function(error) {
+				console.log(error);
+			}).then(function(r){
+          	console.log("Getting the first 50");
+			//artists data-json parsing
+			artists = r.data.artists.items;
+			//push artists name to names list	
+			for (var i = 0; i < artists.length; i++) {
+				names.push(artists[i].name);
 				}
-			}); //response for first 50 ends here
-          //response of next 50 artists is held here
-			$http(req_followed_after).then(function(response) {
-	               return response;
-	            },
-	            function(error) {
-	                console.log(error);
-	            }).then(sendData); //response for next 50 ends here
-			})//response for access token ends here
+			); //response for first 50 ends here
+        //response of next 50 artists is held here
+		$http(req_followed_after).then(function(response) {
+	        return response;
+			},
+	    function(error) {
+	        console.log(error);
+			}).then(sendData); //response for next 50 ends here
+		})//response for access token ends here
 		
 		
-	//function to hold followed artists spoitfy web api response
-	function sendData(response)
-	{	
-		console.log("Getting the next 50");
-		//artists data-json parsing
-		artists = response.data.artists.items;
-		//push artists name to names list	
-		for (var i = 0; i < artists.length; i++) {
-			names.push(artists[i].name);
-		}
+		//function to hold followed artists spoitfy web api response
+		function sendData(response){	
+			console.log("Getting the next 50");
+			//artists data-json parsing
+			artists = response.data.artists.items;
+			//push artists name to names list	
+			for (var i = 0; i < artists.length; i++) {
+				names.push(artists[i].name);
+				}
 		//total-97 followed artists, after second call
 		console.log(names.length);
 		
@@ -235,54 +238,11 @@ function topFunction() {
 			$scope.lon = $localStorage.lon;
 			
 		}
-				    //for (var i=0; i< all_events_array.length; i++){
-			          //  var x = all_events_array[i];
-			            //for( var k=0; k<x.length; k++){
-			            	//var index=x[0].indexOf(":")+1;
-			                //$scope.name = x[0].substr(index);//binding event name to UI
-			                //console.log(x[k]);
-			            //}
-			        //}
-                
-                /*  
-               
-                Parse the json data here and make api calls to google maps api to find distance and time for different modes of transport
-                
-                */
-                //for every event location, construct this url for every mode of transport
-  	            //var modes=["driving", "walking", "transit", "bicycling"];
-         		/* 
-         		
-         		Include code to make origins and destinations dynamic i.e. from the response, get event location, lat and long 
-         		
-         		
-         		*/
-                //api calls to google maps distance matrix api for different modes of transport
-                //for(var i=0;i<modes.length;i++){
-                	//var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=33.4484,%20-112.0740&destinations=33.424564,%20-111.928001";
-                	//if(modes[i]=="transit")
-                		//url_maps+="&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                	//else
-                		//url_maps+="&mode="+modes[i]+"&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                	//response from google maps api is held here
-                    //$http.get(url_maps).then(function(response1){ //response1 holds json data for this request
-                    	//console.log(response1.data.destination_addresses);
-                    //});	//response-google maps api ends here
-                //} //for loop ends here
-                /*
-                
-               //Individual API calls
-                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=transit&transit_mode=train&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=walking&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=bicycling&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-                var url_maps="https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington,DC&destinations=New+York+City,NY&mode=driving&key=AIzaSyCR8NIwX38UOHk5unZH_yErmmJQ7n_V4iA";
-				*/ 
-            //},
-            //function(error) {
-              //  alert("google maps url alert "+error.data.message);
-            //});//api call to lat, long-endpoint-test.java ends here
-		//}//showposition function call ends here
-	}//send data function call ends here	
+            
+					}
+				}
+			}
+		}//send data function call ends here	
 	});//myCtrl controller ends here
 
 </script>
