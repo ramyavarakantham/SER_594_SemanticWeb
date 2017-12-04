@@ -98,9 +98,9 @@
         }, function(response, status) {
           if (status == 'OK') {
             directionsDisplay.setDirections(response);
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
+          } /*else {
+            console.log('Directions request failed due to ' + status);
+          }*/
         });
          var bounds = new google.maps.LatLngBounds;
         var markersArray = [];
@@ -125,7 +125,7 @@
           avoidTolls: false
         }, function(response, status) {
           if (status !== 'OK') {
-            alert('Error was: ' + status);
+            console.log('Error was: ' + status);
           } else {
             var originList = response.originAddresses;
             var destinationList = response.destinationAddresses;
@@ -139,7 +139,7 @@
                 if (status === 'OK') {
                  ;
                 } else {
-                  alert('Geocode was not successful due to: ' + status);
+                  console.log('Geocode was not successful due to: ' + status);
                 }
               };
             };

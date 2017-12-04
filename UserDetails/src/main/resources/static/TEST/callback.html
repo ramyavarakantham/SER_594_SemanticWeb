@@ -68,7 +68,7 @@
 									<br/>
 									{{event[8].substr(6)}}
 									<br/>
-									{{event[9].substr(10)}}
+									{{event[9].substr(9)}}
 									
 								</div>
 								<div class="col-sm-2"></div>
@@ -132,7 +132,7 @@ function topFunction() {
 			headers: {
 				"Authorization": "Bearer "+token
 			}
-        }); //request ends here
+        }//request ends here
 		//Spotify api call to retrieve next set of followed artists
 		var x="4AVFqumd2ogHFlRbKIjp1t";
 		var url_gen="https://api.spotify.com/v1/me/following?limit=50&after="+x+"&type=artist";
@@ -166,29 +166,37 @@ function topFunction() {
 	    function(error) {
 	        console.log(error);
 			}).then(sendData); //response for next 50 ends here
-		})//response for access token ends here
+		});//response for access token ends here
 		
 		
 		//function to hold followed artists spoitfy web api response
 		function sendData(response){
-			alert("inside send data")
 			console.log("Getting the next 50");
 			//artists data-json parsing
 			artists = response.data.artists.items;
-			alert(artists)
 			//push artists name to names list	
 			for (var i = 0; i < artists.length; i++) {
 				names.push(artists[i].name);
 			}
 			//total-97 followed artists, after second call
 			console.log(names.length);
+			//onChangeRadius();
+		}
 		
-			//code to hold user input radius
-		
-			$scope.GetValue = function(){
+		//code to hold user input radius
+		$scope.GetValue = function(){
 			console.log($scope.Radius);
 			radius=$scope.Radius;
+			//location.reload();
+			onChangeRadius();
 			}
+		/* if(radius!=50){
+			
+		} */
+		function onChangeRadius(){
+		
+
+			
 
 				//user's current location is found here
 				if (navigator.geolocation) {
@@ -223,7 +231,7 @@ function topFunction() {
 				    }//for loop ends here
 					
 					$scope.allEvents = all_events_array;
-					alert($scope.allEvents);
+					//alert($scope.allEvents);
 		
 		$scope.saveLatLon = function(i){
 			
@@ -245,7 +253,7 @@ function topFunction() {
             function(error) {
                 alert("google maps url alert "+error.data.message);
             });	
-			}
+			}//show position function call ends here
 		
 		}//send data function call ends here	
 	});//myCtrl controller ends here
