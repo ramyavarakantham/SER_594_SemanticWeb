@@ -85,13 +85,8 @@
 	
 </div>
 <button type="btn btn-info pull-right" class= "btn btn-info pull-right" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    
-</body>
-
-</html>
-<script>
-
-window.onscroll = function() {scrollFunction()};
+ <script>
+ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -106,11 +101,14 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+ </script>
+</body>
 
-
+</html>
+<script>
 
 	//initializing the application
-	var app =  angular.module('myApp1', []);
+	var app =  angular.module('myApp1', ['ngStorage']);
 	app.controller('myCtrl1', function($scope, $http, $localStorage){
 		//Api Call to get access token
 		 var req = {
@@ -134,7 +132,7 @@ function topFunction() {
 			headers: {
 				"Authorization": "Bearer "+token
 			}
-        } //request ends here
+        }); //request ends here
 		//Spotify api call to retrieve next set of followed artists
 		var x="4AVFqumd2ogHFlRbKIjp1t";
 		var url_gen="https://api.spotify.com/v1/me/following?limit=50&after="+x+"&type=artist";
@@ -159,10 +157,11 @@ function topFunction() {
 			for (var i = 0; i < artists.length; i++) {
 				names.push(artists[i].name);
 				}
-			); //response for first 50 ends here
+			}); //response for first 50 ends here
         //response of next 50 artists is held here
 		$http(req_followed_after).then(function(response) {
-	        return response;
+	        
+			return response;
 			},
 	    function(error) {
 	        console.log(error);
@@ -171,23 +170,25 @@ function topFunction() {
 		
 		
 		//function to hold followed artists spoitfy web api response
-		function sendData(response){	
+		function sendData(response){
+			alert("inside send data")
 			console.log("Getting the next 50");
 			//artists data-json parsing
 			artists = response.data.artists.items;
+			alert(artists)
 			//push artists name to names list	
 			for (var i = 0; i < artists.length; i++) {
 				names.push(artists[i].name);
-				}
-		//total-97 followed artists, after second call
-		console.log(names.length);
+			}
+			//total-97 followed artists, after second call
+			console.log(names.length);
 		
-		//code to hold user input radius
+			//code to hold user input radius
 		
-		$scope.GetValue = function(){
-		console.log($scope.Radius);
-		radius=$scope.Radius;
-		}
+			$scope.GetValue = function(){
+			console.log($scope.Radius);
+			radius=$scope.Radius;
+			}
 
 				//user's current location is found here
 				if (navigator.geolocation) {
@@ -239,9 +240,13 @@ function topFunction() {
 			
 		}
             
-					}
-				}
+					
+			},
+            function(error) {
+                alert("google maps url alert "+error.data.message);
+            });	
 			}
+		
 		}//send data function call ends here	
 	});//myCtrl controller ends here
 
