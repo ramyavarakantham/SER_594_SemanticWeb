@@ -89,7 +89,7 @@
 				
 		var selectedMode = document.getElementById('mode').value;
         directionsService.route({
-          origin: {lat: 37.77, lng: -122.447},  // Haight.
+          origin: {lat: 33.4201342, lng: -111.9307939},  // Haight. //33.4201342  -111.9307939
           destination: {lat: parseInt(scope1.lat), lng: parseInt(scope1.lon)},  // Ocean Beach.
           // Note that Javascript allows us to access the constant
           // using square brackets and a string value as its
@@ -114,12 +114,12 @@
             'chst=d_map_pin_letter&chld=O|FFFF00|000000';
       
        var geocoder = new google.maps.Geocoder;
-
+       var selectedMode = document.getElementById('mode').value;
        var service = new google.maps.DistanceMatrixService;
         service.getDistanceMatrix({
           origins: [origin1],
           destinations: [destinationB],
-          travelMode: 'DRIVING',
+          travelMode: google.maps.TravelMode[selectedMode],
           unitSystem: google.maps.UnitSystem.METRIC,
           avoidHighways: false,
           avoidTolls: false

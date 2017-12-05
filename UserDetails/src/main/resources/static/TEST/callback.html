@@ -123,7 +123,7 @@ function topFunction() {
   				return response.data.value;  
         },
         function(error) {
-			alert("spotify first 50 request alert "+error.data.message);
+			console.log("spotify first 50 request alert "+error.data.message);
         }).then(function(token){ //token has access token value
         //With the help of access token, make an api call to spotify web api to get first 50 followed artists
 		var req_followed = {
@@ -208,8 +208,9 @@ function topFunction() {
 				//user's lat and long is held here
 		function showPosition(position) {
 				console.log("Getting the user's location");
-				latitude = position.coords.latitude
+				latitude = position.coords.latitude;
 				longitude = position.coords.longitude; 
+				console.log(latitude+"  "+longitude);
 				//api post call is made to send user's location, user input radius and aritst list
 				$http.post("http://localhost:8080/lat/"+latitude+"/lon/"+longitude+"/rad/"+radius, JSON.stringify(names)).then(function(response){
 					console.log("I'm getting google maps response");
@@ -251,7 +252,7 @@ function topFunction() {
 					
 			},
             function(error) {
-                alert("google maps url alert "+error.data.message);
+                console.log("google maps url alert "+error.data.message);
             });	
 			}//show position function call ends here
 		
